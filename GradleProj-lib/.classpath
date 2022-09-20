@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/main" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/test" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/test" path="src/test/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-16/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/anjalia/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-cucumber/3.2.2/f5776e36a701e19c0dff0ee39fd43fa60b2ece0f/serenity-cucumber-3.2.2.jar" sourcepath="C:/Users/anjalia/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-cucumber/3.2.2/8555cc45c8a73320a51ffdfb3115de8efbd52036/serenity-cucumber-3.2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/anjalia/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-core/7.2.2/9dc35d45aabce93ec818ec8b9ec7b4a0172038a9/cucumber-core-7.2.2.jar" sourcepath="C:/Users/anjalia/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-core/7.2.2/bb67dfaf5bc673982f038a167d0a5bfc99b66967/cucumber-core-7.2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+</classpath>

@@ -1,0 +1,2035 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en-US"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;title&gt;W3Schools Online Web Tutorials&lt;/title&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; <br/>
+  &lt;meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"&gt; <br/>
+  &lt;meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more."&gt; <br/>
+  &lt;meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png"&gt; <br/>
+  &lt;meta property="og:image:type" content="image/png"&gt; <br/>
+  &lt;meta property="og:image:width" content="436"&gt; <br/>
+  &lt;meta property="og:image:height" content="228"&gt; <br/>
+  &lt;meta property="og:title" content="W3Schools Free Online Web Tutorials"&gt; <br/>
+  &lt;meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more."&gt; <br/>
+  &lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt; <br/>
+  &lt;link rel="preload" href="lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin=""&gt; <br/>
+  &lt;link rel="preload" href="lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin=""&gt; <br/>
+  &lt;link rel="preload" href="lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin=""&gt; <br/>
+  &lt;link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin=""&gt; <br/>
+  &lt;link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin=""&gt; <br/>
+  &lt;link rel="preload" href="lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin=""&gt; <br/>
+  &lt;link rel="stylesheet" href="lib/w3schools30.css"&gt; <br/>
+  &lt;script async src="//confiant-integrations.global.ssl.fastly.net/prebid/202206201825/wrap.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="https://www.google-analytics.com/gtm/js?id=GTM-WJ88MZ5&amp;cid=267085234.1655976536"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://confiant-integrations.global.ssl.fastly.net/t_Qv_vWzcBDsyn934F1E0MWBb1c/prebid/config.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script async src="https://www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+var searchFromBox = false;<br/>
+function gSearch(el) {<br/>
+  var cx = uic_r_y();<br/>
+  var gcse = document.createElement('script'); gcse.id = 'gSearch'; gcse.type = 'text/javascript'; gcse.async = true;<br/>
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;<br/>
+  var el = document.getElementById('gSearch');<br/>
+  if (el == null) {<br/>
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);<br/>
+  }<br/>
+  open_search(el, searchFromBox);<br/>
+};<br/>
+<br/>
+function gTra(el) {<br/>
+  var gtra = document.createElement('script'); gtra.id = 'gTra'; gtra.type = 'text/javascript'; gtra.async = true;<br/>
+  gtra.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';<br/>
+  var el = document.getElementById('gTra');<br/>
+  if (el == null) {<br/>
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gtra, s);<br/>
+  }<br/>
+  open_translate(el);<br/>
+};<br/>
+<br/>
+<br/>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){<br/>
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),<br/>
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)<br/>
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');<br/>
+ga('create', 'UA-3855518-1', 'auto');<br/>
+ga('require', 'displayfeatures');<br/>
+ga('require', 'GTM-WJ88MZ5');<br/>
+ga('send', 'pageview');<br/>
+&lt;/script&gt; <br/>
+  &lt;style&gt;<br/>
+/* Customize w3schools23.css */<br/>
+#nav_tutorials,<br/>
+#nav_references,<br/>
+#nav_exercises {<br/>
+  margin-top: 0;<br/>
+}<br/>
+<br/>
+@media screen and (min-width: 769px) {<br/>
+  .w3-bar-block .w3-button {<br/>
+    padding: 0 16px !important;<br/>
+  }<br/>
+}<br/>
+<br/>
+.fa {<br/>
+  font-size: 20px;<br/>
+}<br/>
+<br/>
+#main {<br/>
+  padding: 0;<br/>
+  border-right: none;<br/>
+}<br/>
+<br/>
+.fa-thumbs-o-up:hover {<br/>
+  color: #fff;<br/>
+}<br/>
+<br/>
+@media (min-width:1675px) {<br/>
+  #main {<br/>
+    width: auto;<br/>
+  }<br/>
+}<br/>
+<br/>
+#nav_tutorials,<br/>
+#nav_references,<br/>
+#nav_exercises {<br/>
+  display: none;<br/>
+  padding-bottom: 40px;<br/>
+  position: absolute;<br/>
+  width: 100%;<br/>
+  z-index: 5 !important;<br/>
+}<br/>
+<br/>
+#nav_tutorials h3,<br/>
+#nav_references h3,<br/>
+#nav_exercises h3,<br/>
+#sectionxs_tutorials h3,<br/>
+#sectionxs_references h3,<br/>
+#sectionxs_exercises h3 {<br/>
+  padding-left: 6px;<br/>
+  color: #FFF4A3;<br/>
+}<br/>
+<br/>
+div.cse .gsc-control-cse,<br/>
+div.gsc-control-cse {<br/>
+  padding: 0;<br/>
+  margin-top: 0;<br/>
+}<br/>
+<br/>
+/* Customize W3.CSS */<br/>
+.w3-col.l4 .w3-card-2 {<br/>
+  padding: 15px 10px;<br/>
+  height: 260px;<br/>
+}<br/>
+<br/>
+.w3-bar {<br/>
+  position: relative;<br/>
+  z-index: 4;<br/>
+  font-size: 18px;<br/>
+  xbackground-color: white;<br/>
+  xcolor:#282A35;<br/>
+}<br/>
+<br/>
+h1,<br/>
+h2,<br/>
+h3,<br/>
+h4,<br/>
+h5,<br/>
+h6 {<br/>
+  font-family: 'Source Sans Pro', sans-serif;<br/>
+}<br/>
+<br/>
+h1 {<br/>
+  font-size: 80px;<br/>
+  margin: 2px 0 -20px 0 !important;<br/>
+}<br/>
+<br/>
+.learn h1  {<br/>
+  margin: 10px 0 !important;<br/>
+}<br/>
+<br/>
+<br/>
+.green-border {<br/>
+  border-left: 4px solid #04AA6D;<br/>
+}<br/>
+<br/>
+.w3-round, .w3-round-medium {<br/>
+  border-radius: 5px;<br/>
+}<br/>
+<br/>
+.tryit-button {<br/>
+  background-color: #04AA6D;<br/>
+  color: white;<br/>
+  border-radius: 25px;<br/>
+  font-size: 18px;<br/>
+  width:200px;<br/>
+}<br/>
+<br/>
+.tut-button {<br/>
+  background-color: #04AA6D;<br/>
+  color: white;<br/>
+  font-size: 18px;<br/>
+  margin: auto;<br/>
+  display: block;<br/>
+  width: 200px;<br/>
+  border-radius: 25px;<br/>
+}<br/>
+<br/>
+.w3csstut {<br/>
+  height: 390px;<br/>
+}<br/>
+<br/>
+.tut-button:hover,.tryit-button:hover,.exercise-button:hover,#getdiploma a:hover {<br/>
+  background-color: #059862 !important;<br/>
+  color:white!important;<br/>
+}<br/>
+<br/>
+.bar-item-hover:hover {<br/>
+  background-color: #04AA6D!important;<br/>
+  color:white!important;<br/>
+}<br/>
+<br/>
+.bar-icon-hover:hover,.fa-logo:hover {<br/>
+  background-color: white !important;<br/>
+  color:#059862!important;<br/>
+}<br/>
+<br/>
+.mystyle,.mystyle:hover {<br/>
+  background-color: #282A35!important;<br/>
+  color:white!important;<br/>
+}<br/>
+<br/>
+.closenav_span:hover {<br/>
+  background-color: #282A35!important;<br/>
+  color: #059862!important;<br/>
+}<br/>
+<br/>
+.ref-button {<br/>
+  background-color: white;<br/>
+  font-size: 18px;<br/>
+  margin: auto;<br/>
+  display: block;<br/>
+  width: 200px;<br/>
+  border-radius: 25px;<br/>
+  color: #000;<br/>
+}<br/>
+<br/>
+.ref-button:hover {<br/>
+  background-color: #E7E9EB!important;<br/>
+  color: black;<br/>
+}<br/>
+<br/>
+.black-color {<br/>
+  background-color: #282A35;<br/>
+  color: white;<br/>
+}<br/>
+<br/>
+.black-color:hover {<br/>
+  background-color: #000!important;<br/>
+  color: white!important;<br/>
+}<br/>
+<br/>
+.grey-color {<br/>
+  background-color: #E7E9EB;<br/>
+  color: black<br/>
+}<br/>
+<br/>
+.exercise-button {<br/>
+  padding: 70px 50px;<br/>
+  font-size: 35px;<br/>
+  width:87%;<br/>
+  opacity:0.97;<br/>
+}<br/>
+<br/>
+#w3loginbtn {<br/>
+  width:130px;<br/>
+  background-color:#04AA6D;<br/>
+  color:white;<br/>
+  border-radius:25px;<br/>
+  font-size:18px;<br/>
+  line-height:1.5;<br/>
+  display:none;<br/>
+}<br/>
+<br/>
+#loginactioncontainer {<br/>
+  margin-left:50px;<br/>
+}<br/>
+<br/>
+div.ext_icon_container {<br/>
+  background-color:#fff;<br/>
+  color:#000;<br/>
+}<br/>
+body.darkpagetheme div.ext_icon_container {<br/>
+  background-color:#1d2a35;<br/>
+  color:#ddd;<br/>
+}<br/>
+<br/>
+#darkmodemenu {<br/>
+  position:absolute;<br/>
+  top:5px;<br/>
+  padding:5px 20px 10px 18px;<br/>
+  border-bottom-left-radius:5px;<br/>
+  border-bottom-right-radius:5px;<br/>
+  z-index:-1;<br/>
+  transition: top 0.2s;<br/>
+  user-select: none;<br/>
+}<br/>
+#darkmodemenu input,#darkmodemenu label {<br/>
+  cursor:pointer;<br/>
+}<br/>
+<br/>
+@media screen and (min-width:601px) {<br/>
+  #navbtn_menu {<br/>
+    display: block;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width:430px) {<br/>
+  #w3loginbtn {<br/>
+    width:90px;<br/>
+    line-height:2;<br/>
+    font-size:14px;<br/>
+  }<br/>
+  #loginactioncontainer {<br/>
+    width:70px;<br/>
+    margin-left:16px;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width:380px) {<br/>
+  .w3searchbtntopnav,.w3translatebtntopnav {<br/>
+    display:none!important<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (min-width:861px) {<br/>
+  #myAccordion,#navbtn_menu,<br/>
+  .hidesm {<br/>
+    display: none !important;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width:430px) {<br/>
+  #nav_translate_btn,#nav_search_btn,#navbtn_menu {<br/>
+    padding:8px 8px;<br/>
+  }<br/>
+}<br/>
+<br/>
+<br/>
+@media screen and (max-width:860px) {<br/>
+  .barex, .navex  {<br/>
+    display: none !important;<br/>
+  }<br/>
+  #googleSearch, #google_translate_element {<br/>
+  top:75px;<br/>
+  width:100%!important;<br/>
+  right:0!important;<br/>
+  padding-top:19px!important;<br/>
+}<br/>
+}<br/>
+<br/>
+<br/>
+@media screen and (max-width:768px) {<br/>
+  h1,<br/>
+  .w3-jumbo {<br/>
+    font-size: 60px !important;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width:380px) {<br/>
+  div.cse .gsc-control-cse,<br/>
+  div.gsc-control-cse {<br/>
+    padding: 0;<br/>
+    margin-top: -4px;<br/>
+  }<br/>
+}<br/>
+<br/>
+#w3_cert_badge {<br/>
+  position: absolute;<br/>
+  right: 5%;<br/>
+  width: 220px;<br/>
+  transform: rotate(10deg);<br/>
+  bottom: -15%;<br/>
+}<br/>
+<br/>
+#w3_cert_arrow {<br/>
+  position: absolute;<br/>
+  right: 240px;<br/>
+  width: 220px;<br/>
+  transform: rotate(10deg);<br/>
+  bottom: 0;<br/>
+  z-index: 1;<br/>
+}<br/>
+<br/>
+#howto_padding {<br/>
+  padding: 48px 24px 100px 24px<br/>
+}<br/>
+<br/>
+#getdiploma {<br/>
+  position: relative;<br/>
+  padding: 0 60px 50px 60px;<br/>
+  margin-bottom: 85px;<br/>
+  background-color: #282A35;<br/>
+  color: #FFC0C7;<br/>
+  font-family: 'Source Sans Pro', sans-serif;<br/>
+}<br/>
+<br/>
+#getdiploma p {<br/>
+  font-size: 52px;<br/>
+  margin-top: 1em;<br/>
+  margin-bottom: 1em;<br/>
+  font-family: 'Source Sans Pro', sans-serif;<br/>
+}<br/>
+<br/>
+#getdiploma h2 {<br/>
+  font-size: 62px;<br/>
+  margin-top: 1em;<br/>
+  margin-bottom: 1em;<br/>
+  font-family: 'Source Sans Pro', sans-serif;<br/>
+}<br/>
+<br/>
+#getdiploma a {<br/>
+  border-radius: 50px;<br/>
+  font-size: 18px;<br/>
+  background-color: #04AA6D;<br/>
+  padding: 17px 55px<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 680px) {<br/>
+  #w3_cert_badge {<br/>
+    width: 150px;<br/>
+    right: 2%;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 1155px) {<br/>
+  #w3_cert_arrow {<br/>
+    display: none;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 992px) {<br/>
+  #w3_cert_arrow {<br/>
+    display: block;<br/>
+  }<br/>
+  .w3csstut {<br/>
+  height: auto;<br/>
+}<br/>
+<br/>
+}<br/>
+<br/>
+@media screen and (min-width: 1844px) {<br/>
+  #w3_cert_badge {<br/>
+    width: 190px;<br/>
+    right: 2%;<br/>
+  }<br/>
+<br/>
+  #w3_cert_arrow {<br/>
+    right: 169px;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 800px) {<br/>
+  #w3_cert_arrow {<br/>
+    display: none;<br/>
+  }<br/>
+<br/>
+  #getdiploma h2 {<br/>
+    font-size: 55px;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 600px) {<br/>
+  #w3_cert_badge {<br/>
+    top: -35px;<br/>
+    right: 10px;<br/>
+    width: 100px;<br/>
+  }<br/>
+  <br/>
+  #howto_padding {<br/>
+    padding: 2px 24px 90px 24px<br/>
+  }<br/>
+<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 500px) {<br/>
+  #getdiploma p {<br/>
+    font-size: 40px;<br/>
+  }<br/>
+  #getdiploma a {<br/>
+    width: 100%;<br/>
+  }<br/>
+  div.ext_icon_container {<br/>
+    background-color:transparent!important;<br/>
+  }<br/>
+}<br/>
+.tutbuttons a{<br/>
+  text-decoration:none;<br/>
+}<br/>
+<br/>
+.tutbuttons a div {<br/>
+  opacity:0.9;<br/>
+}<br/>
+<br/>
+.tutbuttons a:hover div {<br/>
+  opacity:1;<br/>
+}<br/>
+<br/>
+.ribbon-vid {<br/>
+  width: 60px;<br/>
+  font-size:14px;<br/>
+  padding: 5px;<br/>
+  position: absolute;<br/>
+  left:-20px;<br/>
+  top:-10px;<br/>
+  text-align: center;<br/>
+  color:black;<br/>
+  border-radius:25px;<br/>
+  -ms-transform: rotate(-20deg); /* IE 9 */<br/>
+  transform: rotate(-20deg);<br/>
+}<br/>
+<br/>
+.ws-yellow-hover:hover {<br/>
+  background-color:#fff080!important;<br/>
+  color:black!important;<br/>
+}<br/>
+<br/>
+.ws-pink-hover:hover {<br/>
+  background-color:#ffb3bb!important;<br/>
+  color:black!important;<br/>
+}<br/>
+<br/>
+.ribbon-topnav {<br/>
+  font-size:11px;<br/>
+  font-weight:bold;<br/>
+  padding:3px 10px;<br/>
+  margin-left:3px;<br/>
+  text-align: center;<br/>
+  color:black;<br/>
+  border-radius:25px;<br/>
+  border:1px solid black;<br/>
+  position:relative;<br/>
+  top:-2px;<br/>
+  background-color:white;<br/>
+}<br/>
+<br/>
+#google_translate_element {<br/>
+  z-index:7!important;<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 1152px) {<br/>
+  .ribbon-topnav {<br/>
+    display: none !important;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 860px) {<br/>
+  .ws-hide-860 {<br/>
+    display: none !important;<br/>
+  }<br/>
+  #darkmodemenu  {<br/>
+    padding:5px 10px 10px 9px;<br/>
+  } <br/>
+}<br/>
+@media screen and (max-width: 1080px) {<br/>
+  .ws-hide-1080 {<br/>
+    display: none !important;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 1200px) {<br/>
+  .ws-hide-1200 {<br/>
+    display: none !important;<br/>
+  }<br/>
+}<br/>
+#howto_iframe {<br/>
+   width: 100%;<br/>
+   border: 6px solid #e3e6e8;<br/>
+   height: 400px;<br/>
+   border-bottom-left-radius:4px;<br/>
+   border-bottom-right-radius:4px;<br/>
+}<br/>
+<br/>
+.vl-howto {<br/>
+  border-left: 50px solid #282A35;<br/>
+  height: 80px;<br/>
+  position: absolute;<br/>
+  top:-6px;<br/>
+  left:50%;<br/>
+  margin-left:-25px;<br/>
+}<br/>
+.vl-howtobtn {<br/>
+  width:50%;<br/>
+  margin-top:73px;<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 1250px) {<br/>
+  .ws-hide-1250 {<br/>
+    display: none !important;<br/>
+  }<br/>
+}<br/>
+@media screen and (max-width: 900px) {<br/>
+  #howto_iframe {<br/>
+    height: 360px;<br/>
+  }<br/>
+}<br/>
+@media screen and (max-width: 800px) {<br/>
+  #howto_iframe {<br/>
+    height: 320px;<br/>
+  }<br/>
+}<br/>
+@media screen and (max-width: 700px) {<br/>
+  #howto_iframe {<br/>
+    height: 280px;<br/>
+  }<br/>
+  .codeeditorbr-input {<br/>
+    margin-left: 15px;<br/>
+  }<br/>
+  .vl-howto {<br/>
+    height:45px;<br/>
+  }<br/>
+.vl-howtobtn {<br/>
+  margin-top:37px;<br/>
+}<br/>
+}<br/>
+@media screen and (max-width:584px) {<br/>
+  #howto_iframe {<br/>
+    height: 245px;<br/>
+  }<br/>
+}<br/>
+@media screen and (max-width:500px) {<br/>
+  #howto_iframe {<br/>
+    height: 215px;<br/>
+  }<br/>
+}<br/>
+@media screen and (max-width:450px) {<br/>
+  #howto_iframe {<br/>
+    height: 203px;<br/>
+  }<br/>
+}<br/>
+.codeeditorbr-container {<br/>
+  border-top-left-radius: 4px;<br/>
+  border-top-right-radius: 4px;<br/>
+}<br/>
+<br/>
+.codeeditorbr-row {<br/>
+  padding: 10px;<br/>
+  background: #f1f1f1;<br/>
+  border-top-left-radius: 4px;<br/>
+  border-top-right-radius: 4px;<br/>
+}<br/>
+<br/>
+.codeeditorbr-column {<br/>
+  float: left;<br/>
+}<br/>
+<br/>
+.codeeditorbr-left {<br/>
+  width: 20%;<br/>
+}<br/>
+<br/>
+.codeeditorbr-middle {<br/>
+  width: 80%;<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 800px) {<br/>
+  .codeeditorbr-left {<br/>
+    width: 24%;<br/>
+  }<br/>
+<br/>
+  .codeeditorbr-middle {<br/>
+    width: 76%;<br/>
+  }<br/>
+}<br/>
+<br/>
+.codeeditorbr-row:after {<br/>
+  content: "";<br/>
+  display: table;<br/>
+  clear: both;<br/>
+}<br/>
+<br/>
+.codeeditorbr-dot {<br/>
+  margin-top: 5px;<br/>
+  height: 15px;<br/>
+  width: 15px;<br/>
+  background-color: #bbb;<br/>
+  border-radius: 50%;<br/>
+  display: inline-block;<br/>
+  margin-left: 3px;<br/>
+}<br/>
+<br/>
+.codeeditorbr-input {<br/>
+  width: 80%;<br/>
+  border-radius: 3px;<br/>
+  border: none;<br/>
+  background-color: white;<br/>
+  margin-top: -8px;<br/>
+  height: 22px;<br/>
+  color: #666;<br/>
+  font-size: 14px;<br/>
+  padding: 5px;<br/>
+}<br/>
+<br/>
+.hover-yellow:hover {<br/>
+  background-color: #fff080 !important;<br/>
+  color: black !important;<br/>
+}<br/>
+<br/>
+.codeeditorbr-tablink {<br/>
+  font-size: 17px;<br/>
+  font-family: 'Source Sans Pro', sans-serif;<br/>
+  border: none;<br/>
+  display: inline-block;<br/>
+  padding: 6px 18px;<br/>
+  vertical-align: middle;<br/>
+  overflow: hidden;<br/>
+  text-decoration: none;<br/>
+  color: inherit;<br/>
+  text-align: center;<br/>
+  cursor: pointer;<br/>
+  white-space: nowrap;<br/>
+  -webkit-touch-callout: none;<br/>
+  -webkit-user-select: none;<br/>
+  -khtml-user-select: none;<br/>
+  -moz-user-select: none;<br/>
+  -ms-user-select: none;<br/>
+  user-select: none;<br/>
+  color: #ffffff;<br/>
+}<br/>
+<br/>
+.codeeditorbr-tablink:hover {<br/>
+  background-color: #E7E9EB !important<br/>
+}<br/>
+<br/>
+.hover-yellow:hover {<br/>
+  background-color:#fff080!important;<br/>
+  color:black!important;<br/>
+}<br/>
+#bgcodeimg {<br/>
+  background: #282A35 url("/about/w3codes.png") no-repeat fixed center;<br/>
+}<br/>
+#bgcodeimg2 {<br/>
+  background: #282A35 url("https://www.w3schools.com/spaces/files/priscilla-du-preez-XkKCui44iM0-unsplash.921aa0c0.jpg") no-repeat fixed center;<br/>
+}<br/>
+<br/>
+form.example {<br/>
+  position:relative;<br/>
+}<br/>
+form.example input[type=text] {<br/>
+  padding: 10px;<br/>
+  font-size: 17px;<br/>
+  border: 1px solid #282A35;<br/>
+  border-radius:25px;<br/>
+  float: left;<br/>
+  width: 80%;<br/>
+  padding-left:25px;<br/>
+  background: white;<br/>
+  border-top-right-radius:0;<br/>
+  border-bottom-right-radius:0;<br/>
+  border-right:0;<br/>
+  border-right: 1px solid #04AA6D;<br/>
+  outline:0;<br/>
+}<br/>
+<br/>
+form.example button {<br/>
+  border-radius:25px;<br/>
+  float: left;<br/>
+  width: 20%;<br/>
+  padding: 10px;<br/>
+  background:#04AA6D;<br/>
+  color: white;<br/>
+  font-size: 17px;<br/>
+  border: 1px solid #282A35;<br/>
+  border-left: none;<br/>
+  cursor: pointer;<br/>
+  border-top-left-radius:0;<br/>
+  border-bottom-left-radius:0;<br/>
+}<br/>
+<br/>
+form.example button:hover {<br/>
+  background: #059862;<br/>
+  color: white;<br/>
+}<br/>
+<br/>
+form.example::after {<br/>
+  content: "";<br/>
+  clear: both;<br/>
+  display: table;<br/>
+}<br/>
+<br/>
+#listofsearchresults {<br/>
+  display:none;<br/>
+  position:absolute;<br/>
+  //border:1px solid #000;<br/>
+  background-color:#282A35;<br/>
+  background-color:#fff;<br/>
+  color:#000;<br/>
+  width:80%;<br/>
+  top:47px;<br/>
+  border-left: 1px solid #282A35;<br/>
+  border-right: 1px solid #282A35;<br/>
+  border-bottom: 1px solid #282A35;<br/>
+  text-align:left;<br/>
+}<br/>
+#listofsearchresults a {<br/>
+  background-color:#e2e3e9;<br/>
+  background-color:#fff;<br/>
+  color:#777;<br/>
+  text-decoration:none;<br/>
+  display:block;<br/>
+  padding:10px 30px;<br/>
+  width:100%;<br/>
+  opacity:0.95;<br/>
+}<br/>
+#listofsearchresults a:hover {<br/>
+  color:#000;<br/>
+  opacity:1;<br/>
+}<br/>
+.span_search {<br/>
+  background-color:#ffecee;<br/>
+}<br/>
+.search_active {<br/>
+  background-color:#ffecee!important;<br/>
+  color:#000!important;<br/>
+}<br/>
+.search_active .span_search {<br/>
+  background-color:#ffccd1;<br/>
+}<br/>
+<br/>
+.learntocodeh1 {<br/>
+  font-size:70px;<br/>
+  font-weight:700;<br/>
+}<br/>
+<br/>
+.learntocodeh3 {<br/>
+  color:#FFC0C7;<br/>
+  font-weight:700;<br/>
+  margin-top:30px!important;<br/>
+  font-size:23px;<br/>
+}<br/>
+.learntocodecontent {<br/>
+  padding-left:90px;<br/>
+  padding-right:90px;<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 600px) {<br/>
+  .learntocodeh1 {<br/>
+    font-size:50px!important;<br/>
+  }<br/>
+  .learntocodeh3 {<br/>
+    font-size:21px!important;<br/>
+  }<br/>
+  .learntocodecontent {<br/>
+    padding-left:35px;<br/>
+    padding-right:35px;<br/>
+  }<br/>
+  form.example input[type=text],form.example button {<br/>
+  font-size: 16px;<br/>
+ }<br/>
+   form.example input[type=text] {<br/>
+   padding-left:16px;<br/>
+ }<br/>
+}<br/>
+<br/>
+@media screen and (max-width: 1006px) and (min-width: 992px) {<br/>
+<br/>
+.ws-hide-special {<br/>
+  display:none;<br/>
+}<br/>
+<br/>
+<br/>
+}<br/>
+<br/>
+.grey-color {<br/>
+  background-color: #E7E9EB;<br/>
+  color: #000;<br/>
+}<br/>
+body.darkpagetheme .grey-color {<br/>
+  background-color: #38444d;<br/>
+  color: #ddd;<br/>
+}<br/>
+<br/>
+body.darkpagetheme .bar-icon-hover:hover,body.darkpagetheme .fa-logo:hover {<br/>
+  background-color: #1d2a35!important;<br/>
+  color:#059862!important;<br/>
+}<br/>
+table.gstl_50 {/*google search suggestions*/<br/>
+  color:#000;<br/>
+}<br/>
+&lt;/style&gt; &lt;!--[if lt IE 9]&gt;<br/>
+&lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;<br/>
+&lt;script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"&gt;&lt;/script&gt;<br/>
+&lt;![endif]--&gt; <br/>
+  &lt;script data-cfasync="false" type="text/javascript"&gt;<br/>
+    window.snigelPubConf = {<br/>
+    "adengine": {<br/>
+      "activeAdUnits": []<br/>
+  }<br/>
+}<br/>
+&lt;/script&gt; <br/>
+  &lt;script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"&gt;&lt;/script&gt; <br/>
+  &lt;script src="/lib/my-learning.js?v=1.0.9"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" async src="//cdn.snigelweb.com/prebid/5.20.2/prebid.js?v=3891-1655328348147"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="//c.amazon-adsystem.com/aax2/apstag.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="//securepubads.g.doubleclick.net/tag/js/gpt.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="https://adengine.snigelweb.com/w3schools.com/3891-1655328348147/adngin.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="//cdn.snigelweb.com/argus/argus.js"&gt;&lt;/script&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body style="position:relative;min-height:100%;font-family: 'Source Sans Pro', sans-serif;"&gt;<br/>
+  &lt;argprec0&gt;&lt;/argprec0&gt;&lt;argprec1&gt;&lt;/argprec1&gt;<br/>
+  &lt;style type="text/css"&gt;.snigel-cmp-framework .sn-inner {background-color:#fffefe!important;}.snigel-cmp-framework .sn-b-def {border-color:#04aa6d!important;color:#04aa6d!important;}.snigel-cmp-framework .sn-b-def.sn-blue {color:#ffffff!important;background-color:#04aa6d!important;border-color:#04aa6d!important;}.snigel-cmp-framework .sn-selector ul li {color:#04aa6d!important;}.snigel-cmp-framework .sn-selector ul li:after {background-color:#04aa6d!important;}.snigel-cmp-framework .sn-footer-tab .sn-privacy a {color:#04aa6d!important;}.snigel-cmp-framework .sn-arrow:after,.snigel-cmp-framework .sn-arrow:before {background-color:#04aa6d!important;}.snigel-cmp-framework .sn-switch input:checked + span::before {background-color:#04aa6d!important;}#adconsent-usp-link {border: 1px solid #04aa6d!important;color:#04aa6d!important;}#adconsent-usp-banner-optout input:checked + .adconsent-usp-slider {background-color:#04aa6d!important;}#adconsent-usp-banner-btn {color:#ffffff;border: solid 1px #04aa6d!important;background-color:#04aa6d!important; }&lt;/style&gt;<br/>
+  &lt;script src="//secure.cdn.fastclick.net/js/pubcid/latest/pubcid.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="//cdn.id5-sync.com/api/1.0/id5-api.js"&gt;&lt;/script&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="AzoawhTRDevLR66Y6MROu167EDncFPBvcKOaQispTo9ouEt5LvcBjnRFqiAByRT+2cDHG1Yj4dXwpLeIhc98/gIAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="A6+nc62kbJgC46ypOwRsNW6RkDn2x7tgRh0wp7jb3DtFF7oEhu1hhm4rdZHZ6zXvnKZLlYcBlQUImC4d3kKihAcAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="A/9La288e7MDEU2ifusFnMg1C2Ij6uoa/Z/ylwJIXSsWfK37oESIPbxbt4IU86OGqDEPnNVruUiMjfKo65H/CQwAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="&gt;<br/>
+  &lt;script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2022061601.js" async&gt;&lt;/script&gt;  <br/>
+  &lt;div style="display:none;position:absolute;z-index:6;top:75px;right:0;height:75px;padding-top:22px;padding-right:20px;padding-left:20px;background-color:#04AA6D;" id="googleSearch"&gt;<br/>
+   &lt;div class="gcse-search"&gt;&lt;/div&gt;<br/>
+  &lt;/div&gt; <br/>
+  &lt;div style="display:none;position:absolute;z-index:5;top:75px;right:0;height:75px;padding-right:15px;background-color:#04AA6D;text-align:right;padding-top:25px;" id="google_translate_element"&gt;&lt;/div&gt; <br/>
+  &lt;div class="w3-bar w3-card-2 notranslate" style="padding-left:12px;padding-right:16px;overflow:visible"&gt; &lt;a href="https://www.w3schools.com " class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home" style="width:77px;"&gt; &lt;i class="fa fa-logo" style="position:relative;z-index:1;color:#04AA6D;font-size:42px!important;"&gt;&lt;/i&gt; &lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px"&gt;Tutorials &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;i class="fa fa-caret-up" style="display:none"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references" title="References" style="width:132px"&gt;References &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;i class="fa fa-caret-up" style="display:none"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24 ws-hide-800" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises" title="Exercises" style="width:118px"&gt;Exercises &lt;i class="fa fa-caret-down" style="font-size:20px;"&gt;&lt;/i&gt;&lt;i class="fa fa-caret-up" style="display:none"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex ws-hide-1200" href="https://www.w3schools.com/videos/index.php" title="Video Tutorials" onclick="ga('send', 'event', 'Videos' , 'fromTopnavDefault')"&gt;Videos&lt;/a&gt; &lt;!--  &lt;a class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex ws-hide-1080" href="/pro/index.php" title="Pro Subscription" onclick="ga('send', 'event', 'Pro' , 'fromTopnavDefault')"&gt;Pro &lt;span class="ribbon-topnav ws-hide-1250"&gt;NEW&lt;/span&gt;&lt;/a&gt;  --&gt; &lt;a class="w3-bar-item w3-button bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px"&gt;Menu &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;i class="fa fa-caret-up" style="display:none"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+   &lt;div id="loginactioncontainer" class="w3-right w3-padding-16"&gt; <br/>
+    &lt;div id="mypagediv" style="display: none;"&gt;&lt;/div&gt; &lt;!-- &lt;button id="w3loginbtn" style="border:none;display:none;cursor:pointer" class="login w3-right w3-hover-greener" onclick='w3_open_nav("login")'&gt;LOG IN&lt;/button&gt;--&gt; &lt;a id="w3loginbtn" class="w3-bar-item w3-btn w3-right" href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com" target="_self" style="display: inline;"&gt;Log in&lt;/a&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-right w3-padding-16 w3-white"&gt; &lt;!--&lt;a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-medium barex" style="width:132px;border-radius:25px;margin-right:8px;" href="https://courses.w3schools.com/" target="_blank" id="cert_navbtn" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses in Default top navigation');" title="Courses"&gt;Paid Courses&lt;/a&gt;--&gt; &lt;a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-medium barex" style="width:132px;border-radius:25px;margin-right:8px;" href="https://courses.w3schools.com/" target="_blank" id="cert_navbtn" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses in Default top navigation');" title="Certificate"&gt;Get Certified&lt;/a&gt; &lt;a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 8px;" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromTopnavDefault', 'click');" title="Get Your Own Website With W3Schools Spaces"&gt;Website &lt;span class="ribbon-topnav ws-hide-1250"&gt;NEW&lt;/span&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button bar-item-hover w3-right ws-hide-1080 w3-hide-small barex topnavmain_pro" style="border-radius: 25px; margin-right: 8px;" href="/pro/index.php" target="_blank" onclick="ga('send', 'event', 'Pro', 'FromTopnavMain');" title="Go pro and unlock powerful features"&gt;Pro &lt;span class="ribbon-topnav ws-hide-1250"&gt;NEW&lt;/span&gt;&lt;/a&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-right w3-padding-16 ext_icon_container" style="padding-top:0!important;padding-bottom:0!important"&gt; &lt;!--&lt;a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white hidesm" href="javascript:void(0)" onclick="w3_open()" title="Menu"&gt;&lt;i class='fa'&gt;&#xf0c9;&lt;/i&gt;&lt;/a&gt;<br/>
+    --&gt; &lt;a class="w3-bar-item w3-button bar-icon-hover w3-right w3searchbtntopnav" href="javascript:void(0)" style="padding-top:24px;padding-bottom:24px;padding-left:12px;padding-right:12px;margin-right:8px" onclick="gSearch(this)" title="Search W3Schools" id="nav_search_btn"&gt;&lt;i class="fa"&gt;î&nbsp;‚&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button bar-icon-hover w3-right w3translatebtntopnav" href="javascript:void(0)" style="padding-top:24px;padding-bottom:24px;padding-left:12px;padding-right:12px" onclick="gTra(this)" title="Translate W3Schools" id="nav_translate_btn"&gt;&lt;i class="fa"&gt;î&nbsp;?&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hide-small" style="padding-top:24px;padding-bottom:24px;padding-left:12px;padding-right:12px" href="javascript:void(0)" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()" onclick="changepagetheme(2)" xxonclick="changecodetheme(this)" xxtitle="Toggle Dark Code"&gt;&lt;i class="fa"&gt;î&nbsp;‹&lt;/i&gt;&lt;/a&gt; <br/>
+    &lt;div id="darkmodemenu" class="ws-grey w3-hide-small" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()"&gt; <br/>
+     &lt;input id="radio_darkpage" type="checkbox" name="radio_theme_mode" onclick="click_darkpage()"&gt;&lt;label for="radio_darkpage"&gt; Dark mode&lt;/label&gt; <br/>
+     &lt;br&gt; <br/>
+     &lt;input id="radio_darkcode" type="checkbox" name="radio_theme_mode" onclick="click_darkcode()"&gt;&lt;label for="radio_darkcode"&gt; Dark code&lt;/label&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;div id="myAccordion" class="w3-card-2 w3-center w3-hide-large ws-grey" style="display:none;cursor:default;"&gt; &lt;a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xxlarge w3-right"&gt;Ã—&lt;/a&gt;<br/>
+   &lt;br&gt; <br/>
+   &lt;div class="w3-container w3-padding-32"&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('tutorials');" href="javascript:void(0);"&gt;Tutorials &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+    &lt;div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"&gt;&lt;/div&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);"&gt;References &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+    &lt;div id="sectionxs_references" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"&gt;&lt;/div&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);"&gt;Exercises &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+    &lt;div id="sectionxs_exercises" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"&gt;&lt;/div&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" href="/cert/default.asp" target="_blank"&gt;Paid Courses&lt;/a&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromTopnavDefault', 'click');" title="Get Your Own Website With W3schools Spaces"&gt;Spaces&lt;/a&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" target="_blank" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromTopnavDefault')" title="Video Tutorials"&gt;Videos&lt;/a&gt; &lt;a class="w3-button w3-block" style="font-size:22px;" href="/pro/index.php"&gt;Pro&lt;/a&gt; &lt;!--    &lt;a class="w3-button w3-block w3-round bar-item-hover" style="font-size:22px;background-color:#04AA6D;color:white;" href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com" target="_blank"&gt;Log in&lt;/a&gt;<br/>
+--&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;nav id="nav_tutorials" class="w3-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;"&gt; <br/>
+   &lt;div class="w3-content" style="max-width:1100px;font-size:18px"&gt; &lt;span onclick="w3_close_nav('tutorials')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white ws-hide-860" style="padding-right:30px;padding-left:30px;"&gt;Ã—&lt;/span&gt;<br/>
+    &lt;br&gt; <br/>
+    &lt;div class="w3-row-padding w3-bar-block"&gt; <br/>
+     &lt;div class="w3-container" style="padding-left:13px"&gt; <br/>
+      &lt;h2 style="color:#FFF4A3;"&gt;&lt;b&gt;Tutorials&lt;/b&gt;&lt;/h2&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;HTML and CSS&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/html/default.asp"&gt;Learn HTML&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/css/default.asp"&gt;Learn CSS&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/css/css_rwd_intro.asp" title="Responsive Web Design"&gt;Learn RWD&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp"&gt;Learn Bootstrap&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/w3css/default.asp"&gt;Learn W3.CSS&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/colors/default.asp"&gt;Learn Colors&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/icons/default.asp"&gt;Learn Icons&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/graphics/default.asp"&gt;Learn Graphics&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/graphics/svg_intro.asp"&gt;Learn SVG&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/graphics/canvas_intro.asp"&gt;Learn Canvas&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/howto/default.asp"&gt;Learn How To&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/sass/default.php"&gt;Learn Sass&lt;/a&gt; <br/>
+      &lt;div class="w3-hide-large w3-hide-small"&gt; <br/>
+       &lt;h3 class="w3-margin-top"&gt;Data Analytics&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/ai/default.asp"&gt;Learn AI&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp"&gt;Learn Machine Learning&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/datascience/default.asp"&gt;Learn Data Science&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/numpy/default.asp"&gt;Learn NumPy&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/pandas/default.asp"&gt;Learn Pandas&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/scipy/index.php"&gt;Learn SciPy&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp"&gt;Learn Matplotlib&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/statistics/index.php"&gt;Learn Statistics&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/excel/index.php"&gt;Learn Excel&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/googlesheets/index.php"&gt;Learn Google Sheets&lt;/a&gt; <br/>
+       &lt;h3 class="w3-margin-top"&gt;XML Tutorials&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/xml/default.asp"&gt;Learn XML&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp"&gt;Learn XML AJAX&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/dom_intro.asp"&gt;Learn XML DOM&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp"&gt;Learn XML DTD&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/schema_intro.asp"&gt;Learn XML Schema&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp"&gt;Learn XSLT&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp"&gt;Learn XPath&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp"&gt;Learn XQuery&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;JavaScript&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/js/default.asp"&gt;Learn JavaScript&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/jquery/default.asp"&gt;Learn jQuery&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/react/default.asp"&gt;Learn React&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/angular/default.asp"&gt;Learn AngularJS&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/js/js_json_intro.asp"&gt;Learn JSON&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp"&gt;Learn AJAX&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/appml/default.asp"&gt;Learn AppML&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/w3js/default.asp"&gt;Learn W3.JS&lt;/a&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Programming&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/python/default.asp"&gt;Learn Python&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/java/default.asp"&gt;Learn Java&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/c/index.php"&gt;Learn C&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cpp/default.asp"&gt;Learn C++&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cs/index.php"&gt;Learn C#&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/r/default.asp"&gt;Learn R&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/kotlin/index.php"&gt;Learn Kotlin&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/go/index.php"&gt;Learn Go&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/django/index.php"&gt;Learn Django&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/typescript/index.php"&gt;Learn TypeScript&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Server Side&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/sql/default.asp"&gt;Learn SQL&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/mysql/default.asp"&gt;Learn MySQL&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/php/default.asp"&gt;Learn PHP&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/asp/default.asp"&gt;Learn ASP&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/nodejs/default.asp"&gt;Learn Node.js&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/nodejs/nodejs_raspberrypi.asp"&gt;Learn Raspberry Pi&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/git/default.asp"&gt;Learn Git&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/aws/index.php"&gt;Learn AWS Cloud&lt;/a&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Web Building&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromTutorialsAcc', 'click');" title="Get Your Own Website With W3schools Spaces"&gt;Create a Website &lt;span class="ribbon-topnav ws-yellow"&gt;NEW&lt;/span&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/where_to_start.asp"&gt;Where To Start&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp"&gt;Web Templates&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/browsers/default.asp"&gt;Web Statistics&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cert/default.asp"&gt;Web Certificates&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/whatis/default.asp"&gt;Web Development&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/tryit/default.asp"&gt;Code Editor&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/typingspeed/default.asp"&gt;Test Your Typing Speed&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank"&gt;Play a Code Game&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cybersecurity/index.php"&gt;Cyber Security&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/accessibility/index.php"&gt;Accessibility&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 w3-hide-medium"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Data Analytics&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/ai/default.asp"&gt;Learn AI&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp"&gt;Learn Machine Learning&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/datascience/default.asp"&gt;Learn Data Science&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/numpy/default.asp"&gt;Learn NumPy&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/pandas/default.asp"&gt;Learn Pandas&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/scipy/index.php"&gt;Learn SciPy&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp"&gt;Learn Matplotlib&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/statistics/index.php"&gt;Learn Statistics&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/excel/index.php"&gt;Learn Excel&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/googlesheets/index.php"&gt;Learn Google Sheets&lt;/a&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;XML Tutorials&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/xml/default.asp"&gt;Learn XML&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp"&gt;Learn XML AJAX&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/dom_intro.asp"&gt;Learn XML DOM&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp"&gt;Learn XML DTD&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/schema_intro.asp"&gt;Learn XML Schema&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp"&gt;Learn XSLT&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp"&gt;Learn XPath&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp"&gt;Learn XQuery&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;br class="hidesm"&gt; <br/>
+  &lt;/nav&gt; <br/>
+  &lt;nav id="nav_references" class="w3-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;"&gt; <br/>
+   &lt;div class="w3-content" style="max-width:1100px;font-size:18px"&gt; &lt;span onclick="w3_close_nav('references')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white ws-hide-860" style="padding-right:30px;padding-left:30px;"&gt;Ã—&lt;/span&gt;<br/>
+    &lt;br&gt; <br/>
+    &lt;div class="w3-row-padding w3-bar-block"&gt; <br/>
+     &lt;div class="w3-container" style="padding-left:13px"&gt; <br/>
+      &lt;h2 style="color:#FFF4A3;"&gt;&lt;b&gt;References&lt;/b&gt;&lt;/h2&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;HTML&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/tags/default.asp"&gt;HTML Tag Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/tags/ref_html_browsersupport.asp"&gt;HTML Browser Support&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/tags/ref_eventattributes.asp"&gt;HTML Event Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/colors/default.asp"&gt;HTML Color Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/tags/ref_attributes.asp"&gt;HTML Attribute Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/tags/ref_canvas.asp"&gt;HTML Canvas Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/graphics/svg_reference.asp"&gt;HTML SVG Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/graphics/google_maps_reference.asp"&gt;Google Maps Reference&lt;/a&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;CSS&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/cssref/default.asp"&gt;CSS Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cssref/css3_browsersupport.asp"&gt;CSS Browser Support&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cssref/css_selectors.asp"&gt;CSS Selector Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ref_all_classes.asp"&gt;Bootstrap 3 Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_ref_all_classes.asp"&gt;Bootstrap 4 Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/w3css/w3css_references.asp"&gt;W3.CSS Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/icons/icons_reference.asp"&gt;Icon Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/sass/sass_functions_string.php"&gt;Sass Reference&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;JavaScript&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/jsref/default.asp"&gt;JavaScript Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/jsref/default.asp"&gt;HTML DOM Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/jquery/jquery_ref_overview.asp"&gt;jQuery Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/angular/angular_ref_directives.asp"&gt;AngularJS Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/appml/appml_reference.asp"&gt;AppML Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp"&gt;W3.JS Reference&lt;/a&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Programming&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/python/python_reference.asp"&gt;Python Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/java/java_ref_keywords.asp"&gt;Java Reference&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Server Side&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/sql/sql_ref_keywords.asp"&gt;SQL Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/mysql/mysql_ref_functions.asp"&gt;MySQL Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/php/php_ref_overview.asp"&gt;PHP Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/asp/asp_ref_response.asp"&gt;ASP Reference&lt;/a&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;XML&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/xml/dom_nodetype.asp"&gt;XML DOM Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/dom_http.asp"&gt;XML Http Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xsl_elementref.asp"&gt;XSLT Reference&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/schema_elements_ref.asp"&gt;XML Schema Reference&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;Character Sets&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/default.asp"&gt;HTML Character Sets&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/ref_html_ascii.asp"&gt;HTML ASCII&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp"&gt;HTML ANSI&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp"&gt;HTML Windows-1252&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/ref_html_8859.asp"&gt;HTML ISO-8859-1&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/ref_html_symbols.asp"&gt;HTML Symbols&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/charsets/ref_html_utf8.asp"&gt;HTML UTF-8&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;br class="hidesm"&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/nav&gt; <br/>
+  &lt;nav id="nav_exercises" class="w3-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;"&gt; <br/>
+   &lt;div class="w3-content" style="max-width:1100px;font-size:18px"&gt; &lt;span onclick="w3_close_nav('exercises')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white ws-hide-860" style="padding-right:30px;padding-left:30px;"&gt;Ã—&lt;/span&gt;<br/>
+    &lt;br&gt; <br/>
+    &lt;div class="w3-row-padding w3-bar-block"&gt; <br/>
+     &lt;div class="w3-container" style="padding-left:13px"&gt; <br/>
+      &lt;h2 style="color:#FFF4A3;"&gt;&lt;b&gt;Exercises and Quizzes&lt;/b&gt;&lt;/h2&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;&lt;a class="ws-btn ws-yellow w3-hover-text-white" style="width:155px;font-size:21px" href="/exercises/index.php"&gt;Exercises&lt;/a&gt;&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/html/html_exercises.asp"&gt;HTML Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/css/css_exercises.asp"&gt;CSS Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/js/js_exercises.asp"&gt;JavaScript Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/sql/sql_exercises.asp"&gt;SQL Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/mysql/mysql_exercises.asp"&gt;MySQL Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/php/php_exercises.asp"&gt;PHP Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/python_exercises.asp"&gt;Python Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/numpy/numpy_exercises.asp"&gt;NumPy Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/pandas/pandas_exercises.asp"&gt;Pandas Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/scipy/scipy_exercises.php"&gt;SciPy Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp"&gt;jQuery Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/java/java_exercises.asp"&gt;Java Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp"&gt;C++ Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cs/cs_exercises.asp"&gt;C# Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/r/r_exercises.asp"&gt;R Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/kotlin/kotlin_exercises.php"&gt;Kotlin Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/go/go_exercises.php"&gt;Go Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp"&gt;Bootstrap Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_exercises.asp"&gt;Bootstrap 4 Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_exercises.php"&gt;Bootstrap 5 Exercises&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/git/git_exercises.asp"&gt;Git Exercises&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;&lt;a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="/quiztest/default.asp"&gt;Quizzes&lt;/a&gt;&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="/html/html_quiz.asp" target="_top"&gt;HTML Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top"&gt;CSS Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top"&gt;JavaScript Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/sql/sql_quiz.asp" target="_top"&gt;SQL Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/mysql/mysql_quiz.asp" target="_top"&gt;MySQL Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top"&gt;PHP Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top"&gt;Python Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/numpy/numpy_quiz.asp" target="_top"&gt;NumPy Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/pandas/pandas_quiz.asp" target="_top"&gt;Pandas Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/python/scipy/scipy_quiz.php" target="_top"&gt;SciPy Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top"&gt;jQuery Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/java/java_quiz.asp" target="_top"&gt;Java Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top"&gt;C++ Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top"&gt;C# Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/r/r_quiz.asp" target="_top"&gt;R Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/kotlin/kotlin_quiz.php" target="_top"&gt;Kotlin Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top"&gt;XML Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top"&gt;Bootstrap Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_quiz.asp" target="_top"&gt;Bootstrap 4 Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_quiz.php" target="_top"&gt;Bootstrap 5 Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/cybersecurity/cybersecurity_quiz.php"&gt;Cyber Security Quiz&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="/accessibility/accessibility_quiz.php"&gt;Accessibility Quiz&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;&lt;a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="https://courses.w3schools.com/" target="_blank"&gt;Courses&lt;/a&gt;&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/html" target="_blank"&gt;HTML Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/css" target="_blank"&gt;CSS Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/javascript" target="_blank"&gt;JavaScript Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/front-end" target="_blank"&gt;Front End Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/sql" target="_blank"&gt;SQL Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/php" target="_blank"&gt;PHP Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/python" target="_blank"&gt;Python Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/numpy-fundamentals" target="_blank"&gt;NumPy Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/pandas-fundamentals" target="_blank"&gt;Pandas Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/data-analytics" target="_blank"&gt;Data Analytics Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/jquery" target="_blank"&gt;jQuery Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/java" target="_blank"&gt;Java Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/cplusplus" target="_blank"&gt;C++ Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/c-sharp" target="_blank"&gt;C# Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/r-fundamentals" target="_blank"&gt;R Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/xml" target="_blank"&gt;XML Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/introduction-to-cyber-security" target="_blank"&gt;Cyber Security Course&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/accessibility-fundamentals" target="_blank"&gt;Accessibility Course&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6"&gt; <br/>
+      &lt;h3 class="w3-margin-top"&gt;&lt;a class="ws-btn ws-yellow w3-hover-text-white" style="width:150px;font-size:21px" href="https://courses.w3schools.com/browse/certifications" target="_blank"&gt;Certificates&lt;/a&gt;&lt;/h3&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/html-certification-exam" target="_blank"&gt;HTML Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/css-certification-exam" target="_blank"&gt;CSS Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/javascript-certification-exam" target="_blank"&gt;JavaScript Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank"&gt;Front End Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/sql-certification-exam" target="_blank"&gt;SQL Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/php-certification-exam" target="_blank"&gt;PHP Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank"&gt;Python Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank"&gt;Data Science Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/bootstrap-3-certification-exam" target="_blank"&gt;Bootstrap 3 Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/bootstrap-4-certification-exam" target="_blank"&gt;Bootstrap 4 Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/jquery-certification-exam" target="_blank"&gt;jQuery Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/java-certification-exam" target="_blank"&gt;Java Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/c-certification-exam" target="_blank"&gt;C++ Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank"&gt;React Certificate&lt;/a&gt; &lt;a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/xml-certification-exam" target="_blank"&gt;XML Certificate&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;br class="hidesm"&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/nav&gt; &lt;!-- MAIN --&gt; <br/>
+  &lt;div class="w3-main" id="main"&gt; <br/>
+   &lt;div class="ws-black w3-center" style="padding-top:90px;padding-bottom:90px;"&gt; <br/>
+    &lt;div class="w3-content learntocodecontent" style="max-width:1400px"&gt; <br/>
+     &lt;h1 class="learntocodeh1"&gt;Learn to Code&lt;/h1&gt; <br/>
+     &lt;h3 class="learntocodeh3"&gt;With the world's largest web developer site.&lt;/h3&gt; <br/>
+     &lt;br&gt; <br/>
+     &lt;form class="example" action="/action_page.php" style="margin:auto;max-width:500px"&gt; <br/>
+      &lt;input type="text" placeholder="Search our tutorials, e.g. HTML" id="search2" autocomplete="off" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this);ga('send', 'event', 'search', 'inputFocus')"&gt; &lt;button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"&gt;&lt;i id="learntocode_searchicon" class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt; <br/>
+      &lt;div id="listofsearchresults"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/form&gt; <br/>
+     &lt;h4 style="color:white;font-size:23px;font-weight:700;margin-top:30px!important;"&gt; &lt;a href="where_to_start.asp"&gt;Not Sure Where To Begin?&lt;/a&gt; &lt;/h4&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;svg style="background-color:#D9EEE1;" width="100%" height="70" viewbox="0 0 100 100" preserveaspectratio="none"&gt; &lt;path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"&gt;&lt;/path&gt; <br/>
+   &lt;/svg&gt; <br/>
+   &lt;script&gt;<br/>
+(<br/>
+function setThemeMode() {<br/>
+  var x = localStorage.getItem("preferredmode");<br/>
+  var y = localStorage.getItem("preferredpagemode");  <br/>
+  if (x == "dark") {<br/>
+    document.body.className += " darktheme";<br/>
+    document.getElementById("radio_darkcode").checked = true;<br/>
+    <br/>
+  }<br/>
+  if (y == "dark") {<br/>
+    document.body.className += " darkpagetheme";<br/>
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)";<br/>
+    document.getElementById("radio_darkpage").checked = true;<br/>
+    <br/>
+  }<br/>
+})();<br/>
+&lt;/script&gt; <br/>
+   &lt;div class="w3-row w3-padding-32 ws-light-green" style="margin-top:-10px;"&gt; <br/>
+    &lt;div class="w3-content" style="max-width:1400px"&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:3%;"&gt; <br/>
+      &lt;h1 style="font-size:100px;font-weight:700;margin-top:-18px!important;"&gt;HTML&lt;/h1&gt; <br/>
+      &lt;p style="font-size:19px;"&gt;The language for building web pages&lt;/p&gt; &lt;a href="/html/default.asp" class="w3-button tut-button" style="margin-bottom:2px;"&gt;Learn HTML&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a style="position:relative;overflow:visible;margin-bottom:1px;" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromdefault')" class="w3-button ws-yellow tut-button ws-yellow-hover" title="HTML video tutorial"&gt;Video Tutorial&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="/tags/default.asp" class="w3-button w3-block ref-button black-color"&gt;HTML Reference&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="https://courses.w3schools.com/browse/certifications/courses/html-certification-exam" target="_blank" class="w3-button w3-block ws-pink ref-button ws-pink-hover" title="Add HTML Certification"&gt;Buy Certificate&lt;/a&gt;<br/>
+      &lt;br&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6" style="padding:3%"&gt; <br/>
+      &lt;div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;"&gt; <br/>
+       &lt;h3&gt;HTML Example:&lt;/h3&gt; <br/>
+       &lt;div class="w3-code htmlHigh notranslate green-border" style="height:300px"&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;!DOCTYPE&lt;span class="attributecolor" style="color:red"&gt; html&lt;/span&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;html&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;title&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;HTML Tutorial&lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/title&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;body&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;h1&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;This is a heading&lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/h1&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;p&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;This is a paragraph.&lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/p&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/body&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/html&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt; <br/>
+       &lt;/div&gt; &lt;a href="/html/tryit.asp?filename=tryhtml_default_default" target="_blank" class="w3-button tryit-button"&gt;Try it Yourself&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row w3-padding-32 ws-yellow"&gt; <br/>
+    &lt;div class="w3-content" style="max-width:1400px"&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:3%"&gt; <br/>
+      &lt;h1 style="font-size:100px;font-weight:700"&gt;CSS&lt;/h1&gt; <br/>
+      &lt;p style="font-size:19px;"&gt;The language for styling web pages&lt;/p&gt; &lt;a href="/css/default.asp" class="w3-button w3-block tut-button"&gt;Learn CSS&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="/cssref/default.asp" class="w3-button w3-block ref-button black-color"&gt;CSS Reference&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="https://courses.w3schools.com/browse/certifications/courses/css-certification-exam" target="_blank" class="w3-button w3-block ws-pink ref-button ws-pink-hover" title="Add CSS Certification"&gt;Buy Certificate&lt;/a&gt;<br/>
+      &lt;br&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6" style="padding:3%"&gt; <br/>
+      &lt;div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;"&gt; <br/>
+       &lt;h3&gt;CSS Example:&lt;/h3&gt; <br/>
+       &lt;div class="w3-code cssHigh notranslate green-border"&gt;<br/>
+        &lt;span class="cssselectorcolor" style="color:brown"&gt; body &lt;span class="cssdelimitercolor" style="color:black"&gt;{&lt;/span&gt;&lt;span class="csspropertycolor" style="color:red"&gt;&lt;br&gt; &nbsp; background-color&lt;span class="csspropertyvaluecolor" style="color:mediumblue"&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;:&lt;/span&gt; lightblue&lt;span class="cssdelimitercolor" style="color:black"&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;}&lt;/span&gt;&lt;br&gt;&lt;br&gt; h1 &lt;span class="cssdelimitercolor" style="color:black"&gt;{&lt;/span&gt;&lt;span class="csspropertycolor" style="color:red"&gt;&lt;br&gt; &nbsp; color&lt;span class="csspropertyvaluecolor" style="color:mediumblue"&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;:&lt;/span&gt; white&lt;span class="cssdelimitercolor" style="color:black"&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt; &nbsp; text-align&lt;span class="csspropertyvaluecolor" style="color:mediumblue"&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;:&lt;/span&gt; center&lt;span class="cssdelimitercolor" style="color:black"&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;}&lt;/span&gt;&lt;br&gt;&lt;br&gt;p &lt;span class="cssdelimitercolor" style="color:black"&gt;{&lt;/span&gt;&lt;span class="csspropertycolor" style="color:red"&gt;&lt;br&gt;&nbsp; font-family&lt;span class="csspropertyvaluecolor" style="color:mediumblue"&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;:&lt;/span&gt; verdana&lt;span class="cssdelimitercolor" style="color:black"&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class="cssdelimitercolor" style="color:black"&gt;}&lt;/span&gt;&lt;/span&gt;<br/>
+       &lt;/div&gt; &lt;a href="/css/tryit.asp?filename=trycss_default" target="_blank" class="w3-button tryit-button"&gt;Try it Yourself&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row w3-padding-32 ws-black"&gt; <br/>
+    &lt;div class="w3-content" style="max-width:1400px"&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:3%"&gt; <br/>
+      &lt;h1 style="font-size:70px;font-weight:700;margin-bottom:18px!important"&gt;JavaScript&lt;/h1&gt; <br/>
+      &lt;p style="font-size:19px"&gt;The language for programming web pages&lt;/p&gt; &lt;a href="/js/default.asp" class="w3-button w3-block tut-button"&gt;Learn JavaScript&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="/jsref/default.asp" class="w3-button w3-block ref-button"&gt;JavaScript Reference&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="https://courses.w3schools.com/browse/certifications/courses/javascript-certification-exam" target="_blank" class="w3-button w3-block ws-pink ref-button ws-pink-hover" title="Add JavaScript Certification"&gt;Buy Certificate&lt;/a&gt;<br/>
+      &lt;br&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6" style="padding:3%"&gt; <br/>
+      &lt;div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;"&gt; <br/>
+       &lt;h3&gt;JavaScript Example:&lt;/h3&gt; <br/>
+       &lt;div class="w3-code notranslate green-border"&gt; <br/>
+        &lt;div class="htmlHigh"&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;button&lt;span class="attributecolor" style="color:red"&gt; onclick&lt;span class="attributevaluecolor" style="color:mediumblue"&gt;="myFunction()"&lt;/span&gt;&lt;/span&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;Click Me!&lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/button&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+         &lt;br&gt;<br/>
+         &lt;br&gt; &lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;script&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="jscolor" style="color:black"&gt;&lt;br&gt; &lt;span class="jskeywordcolor" style="color:mediumblue"&gt;function&lt;/span&gt; myFunction() {&lt;br&gt;&lt;span class="jsnumbercolor" style="color:red"&gt; &lt;/span&gt; &nbsp; &lt;span class="jskeywordcolor" style="color:mediumblue"&gt;let&lt;/span&gt; x = document.&lt;span class="jspropertycolor" style="color:black"&gt;getElementById&lt;/span&gt;(&lt;span class="jsstringcolor" style="color:brown"&gt;"demo"&lt;/span&gt;);&lt;br&gt;&lt;span class="jsnumbercolor" style="color:red"&gt; &lt;/span&gt;&nbsp; x.&lt;span class="jspropertycolor" style="color:black"&gt;style&lt;/span&gt;.&lt;span class="jspropertycolor" style="color:black"&gt;fontSize&lt;/span&gt; = &lt;span class="jsstringcolor" style="color:brown"&gt;"25px"&lt;/span&gt;; &lt;br&gt;&lt;span class="jsnumbercolor" style="color:red"&gt; &lt;/span&gt;&nbsp; x.&lt;span class="jspropertycolor" style="color:black"&gt;style&lt;/span&gt;.&lt;span class="jspropertycolor" style="color:black"&gt;color&lt;/span&gt; = &lt;span class="jsstringcolor" style="color:brown"&gt;"red"&lt;/span&gt;; &lt;br&gt;}&lt;br&gt; &lt;/span&gt;&lt;span class="tagnamecolor" style="color:brown"&gt;&lt;span class="tagcolor" style="color:mediumblue"&gt;&lt;&lt;/span&gt;/script&lt;span class="tagcolor" style="color:mediumblue"&gt;&gt;&lt;/span&gt;&lt;/span&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;a href="/js/tryit.asp?filename=tryjs_default" target="_blank" class="w3-button tryit-button"&gt;Try it Yourself&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row w3-padding-32 ws-light-pink"&gt; <br/>
+    &lt;div class="w3-content" style="max-width:1400px"&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:3%"&gt; <br/>
+      &lt;h1 style="font-weight:700"&gt;Python&lt;/h1&gt; <br/>
+      &lt;p style="font-size:19px"&gt;A popular programming language&lt;/p&gt; &lt;a href="/python/default.asp" class="w3-button w3-block tut-button"&gt;Learn Python&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="/python/python_reference.asp" class="w3-button ref-button black-color"&gt;Python Reference&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="https://courses.w3schools.com/browse/certifications/courses/python-certification-exam" target="_blank" class="w3-button w3-block ws-pink ref-button ws-pink-hover" title="Add Python Certification"&gt;Buy Certificate&lt;/a&gt;<br/>
+      &lt;br&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6" style="padding:3%"&gt; <br/>
+      &lt;div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;"&gt; <br/>
+       &lt;h3&gt;Python Example:&lt;/h3&gt; <br/>
+       &lt;div class="w3-code jsHigh notranslate green-border" style="height:210px"&gt;<br/>
+        &lt;span class="jscolor" style="color:black"&gt;&lt;span class="jsnumbercolor" style="color:red"&gt; &lt;/span&gt; &lt;span class="jskeywordcolor" style="color:mediumblue"&gt;if&lt;/span&gt; &lt;span class="jsnumbercolor" style="color:red"&gt;5&lt;/span&gt; &gt; &lt;span class="jsnumbercolor" style="color:red"&gt;2&lt;/span&gt;:&lt;br&gt;&nbsp; print(&lt;span class="jsstringcolor" style="color:brown"&gt;"Five is greater than two!"&lt;/span&gt;)&lt;span class="jsnumbercolor" style="color:red"&gt; &lt;/span&gt; &lt;/span&gt;<br/>
+       &lt;/div&gt; &lt;a href="/python/trypython.asp?filename=demo_indentation" target="_blank" class="w3-button tryit-button"&gt;Try it Yourself&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row w3-padding-32 ws-turquoise"&gt; <br/>
+    &lt;div class="w3-content" style="max-width:1400px"&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:3%"&gt; <br/>
+      &lt;h1 style="font-weight:700"&gt;SQL&lt;/h1&gt; <br/>
+      &lt;p style="font-size:19px"&gt;A language for accessing databases&lt;/p&gt; &lt;a href="/sql/default.asp" class="w3-button w3-block tut-button"&gt;Learn SQL&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="/sql/sql_ref_keywords.asp" class="w3-button ref-button black-color"&gt;SQL Reference&lt;/a&gt;<br/>
+      &lt;br&gt; &lt;a href="https://courses.w3schools.com/browse/certifications/courses/sql-certification-exam" target="_blank" class="w3-button w3-block ws-pink ref-button ws-pink-hover" title="Add SQL Certification"&gt;Buy Certificate&lt;/a&gt;<br/>
+      &lt;br&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6" style="padding:3%"&gt; <br/>
+      &lt;div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;"&gt; <br/>
+       &lt;h3&gt;SQL Example:&lt;/h3&gt; <br/>
+       &lt;div class="w3-code sqlHigh notranslate green-border" style="height:210px"&gt;<br/>
+        &lt;span class="sqlcolor" style="color:black"&gt;&lt;span class="sqlnumbercolor" style="color:"&gt; &lt;/span&gt; &lt;span class="sqlkeywordcolor" style="color:mediumblue"&gt;SELECT&lt;/span&gt; * &lt;span class="sqlkeywordcolor" style="color:mediumblue"&gt;FROM&lt;/span&gt; Customers&lt;br&gt;&lt;span class="sqlnumbercolor" style="color:"&gt; &lt;/span&gt; &lt;span class="sqlkeywordcolor" style="color:mediumblue"&gt;WHERE&lt;/span&gt; Country=&lt;span class="sqlstringcolor" style="color:brown"&gt;'Mexico'&lt;/span&gt;;&lt;span class="sqlnumbercolor" style="color:"&gt; &lt;/span&gt; &lt;/span&gt;<br/>
+       &lt;/div&gt; &lt;a href="/sql/trysql.asp?filename=trysql_select_where" target="_blank" class="w3-button tryit-button"&gt;Try it Yourself&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row w3-padding-64 ws-black"&gt; <br/>
+    &lt;div style="max-width:1400px;margin:auto"&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:2% 3%;"&gt; <br/>
+      &lt;div class="w3-card-2 w3-round" style="color:black;background-color:#FFC0C7;padding:24px"&gt; <br/>
+       &lt;h2 style="font-size:45px;font-weight:700"&gt;PHP&lt;/h2&gt; <br/>
+       &lt;div style="height:70px;"&gt; <br/>
+        &lt;h5 class="w3-text-dark-grey"&gt;A web server programming language&lt;/h5&gt; <br/>
+       &lt;/div&gt; &lt;a href="/php/default.asp" class="w3-button tut-button black-color w3-margin-bottom"&gt;Learn PHP&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:2% 3%;"&gt; <br/>
+      &lt;div class="w3-card-2 w3-round" style="background-color: #FFF4A3;color:black;padding:24px"&gt; <br/>
+       &lt;h2 style="font-size:45px;font-weight:700"&gt;jQuery&lt;/h2&gt; <br/>
+       &lt;div style="height:70px;"&gt; <br/>
+        &lt;h5 class="w3-text-dark-grey"&gt;A JS library for developing web pages&lt;/h5&gt; <br/>
+       &lt;/div&gt; &lt;a href="/jquery/default.asp" class="w3-button tut-button black-color w3-margin-bottom"&gt;Learn jQuery&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:2% 3%;"&gt; <br/>
+      &lt;div class="w3-card-2 w3-round" style="color:black;background-color:#F3ECEA;padding:24px"&gt; <br/>
+       &lt;h2 style="font-size:45px;font-weight:700"&gt;Java&lt;/h2&gt; <br/>
+       &lt;div style="height:70px;"&gt; <br/>
+        &lt;h5 class="w3-text-dark-grey"&gt;A programming language&lt;/h5&gt; <br/>
+       &lt;/div&gt; &lt;a href="/java/default.asp" class="w3-button tut-button black-color w3-margin-bottom"&gt;Learn Java&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:2% 3%;"&gt; <br/>
+      &lt;div class="w3-card-2 w3-round" style="color:black;background-color:#D9EEE1;padding:24px"&gt; <br/>
+       &lt;h2 style="font-size:45px;font-weight:700"&gt;C++&lt;/h2&gt; <br/>
+       &lt;div style="height:70px;"&gt; <br/>
+        &lt;h5 class="w3-text-dark-grey"&gt;A programming language&lt;/h5&gt; <br/>
+       &lt;/div&gt; &lt;a href="/cpp/default.asp" class="w3-button tut-button black-color w3-margin-bottom"&gt;Learn C++&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:2% 3%;"&gt; <br/>
+      &lt;div class="w3-card-2 w3-round" style="color:black;background-color:#96D4D4;padding:24px;"&gt; <br/>
+       &lt;h2 style="font-size:45px;font-weight:700"&gt;W3.CSS&lt;/h2&gt; <br/>
+       &lt;div style="height:70px;"&gt; <br/>
+        &lt;h5&gt;A CSS framework for faster and better responsive web pages&lt;/h5&gt; <br/>
+       &lt;/div&gt; &lt;a href="/w3css/default.asp" class="w3-button tut-button black-color w3-margin-bottom"&gt;Learn W3.CSS&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 w3-center" style="padding:2% 3%;"&gt; <br/>
+      &lt;div class="w3-card-2 w3-round" style="color:black;background-color:#E7E9EB;padding:24px;"&gt; <br/>
+       &lt;h2 style="font-size:45px;font-weight:700"&gt;Bootstrap&lt;/h2&gt; <br/>
+       &lt;div style="height:70px;"&gt; <br/>
+        &lt;h5 class="w3-text-dark-grey"&gt;A CSS framework for designing better web pages&lt;/h5&gt; <br/>
+       &lt;/div&gt; &lt;a href="/bootstrap/bootstrap_ver.asp" class="w3-button tut-button black-color w3-margin-bottom"&gt;Learn Bootstrap&lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row ws-black tutbuttons" style="padding-bottom:64px;"&gt; <br/>
+    &lt;div style="max-width:1400px;margin:auto"&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/c/index.php" title="C Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:36px 24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;C&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/cs/index.php" title="C# Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:36px 24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;C#&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/r/default.asp" title="R Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;R&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/kotlin/index.php" title="Kotlin Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px 15px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Kotlin&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/nodejs/default.asp" title="Node.js Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Node.js&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/react/default.asp" title="React Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;React&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/js/js_json.asp" title="JSON Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;JSON&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/angular/default.asp" title="AngularJS Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;AngularJS&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/mysql/default.asp" title="MySQL Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;MySQL&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; &lt;!--<br/>
+    &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt;<br/>
+      &lt;a href="/w3js/default.asp" title="W3.JS Tutorial"&gt;<br/>
+        &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt;<br/>
+          &lt;h2 style="font-size:30px;font-weight:500"&gt;W3.JS&lt;/h2&gt;<br/>
+        &lt;/div&gt;<br/>
+      &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+    --&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/xml/default.asp" title="XML Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;XML&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/sass/default.php" title="Sass Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Sass&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/icons/default.asp" title="Icons Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Icons&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/css/css_rwd_intro.asp" title="Responsive Web Design Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;RWD&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/graphics/default.asp" title="Graphics Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Graphics&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/graphics/svg_intro.asp" title="SVG Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;SVG&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/graphics/canvas_intro.asp" title="Canvas Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Canvas&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/nodejs/nodejs_raspberrypi.asp" title="Raspberry Pi Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:24px 0"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Raspberry Pi&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/cybersecurity/index.php" title="Cyber Security Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px 0"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Cyber&lt;span class="ws-hide-special"&gt; Security&lt;/span&gt;&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/colors/default.asp" title="Colors Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Colors&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/git/default.asp" title="Git Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Git&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/python/matplotlib_intro.asp" title="Python Matplotlib Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Matplotlib&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/python/numpy/default.asp" title="Python NumPy Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;NumPy&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/python/pandas/default.asp" title="Python Pandas Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Pandas&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/python/scipy/index.php" title="Python SciPy Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;SciPy&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/asp/default.asp" title="ASP Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;ASP&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/accessibility/index.php" title="Accessibility Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:24px 0"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Accessibility&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/appml/default.asp" title="AppML Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;AppML&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/go/index.php" title="Go Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Go&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/typescript/index.php" title="TypeScript Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;TypeScript&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;"&gt; &lt;a href="/django/index.php" title="Django Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Django&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; &lt;!-- End small boxes --&gt; &lt;!-- other boxes --&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/excel/index.php" title="Excel Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-turquoise" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Excel&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/googlesheets/index.php" title="Google Sheets Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-yellow" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Google Sheets&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/python/python_ml_getting_started.asp" title="Machine Learning Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Machine Learning&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/ai/default.asp" title="Artificial Intelligence Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Artificial Intelligence&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/statistics/index.php" title="Statistics Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-pink" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Statistics&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;"&gt; &lt;a href="/datascience/default.asp" title="Data Science Tutorial"&gt; <br/>
+       &lt;div class="w3-card-2 w3-round ws-light-green" style="padding:24px"&gt; <br/>
+        &lt;h2 style="font-size:30px;font-weight:500"&gt;Data Science&lt;/h2&gt; <br/>
+       &lt;/div&gt; &lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="ws-black" style="padding:30px 3px 85px 3px"&gt; <br/>
+    &lt;div class="w3-content w3-padding" style="max-width:974px;padding-top:78px;padding-bottom:125px"&gt; <br/>
+     &lt;h1 style="font-size:65px;font-weight:700;text-align:center"&gt;Code Editor&lt;/h1&gt; <br/>
+     &lt;h4 style="margin-top:25px;" class="w3-center"&gt;With our online code editor, you can edit code and view the result in your browser&lt;/h4&gt; <br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt; <br/>
+     &lt;div class="codeeditorbr-container"&gt; <br/>
+      &lt;div class="codeeditorbr-row"&gt; <br/>
+       &lt;div class="codeeditorbr-column codeeditorbr-left"&gt; &lt;span class="codeeditorbr-dot" style="background:#ED594A;"&gt;&lt;/span&gt; &lt;span class="codeeditorbr-dot" style="background:#FDD800;"&gt;&lt;/span&gt; &lt;span class="codeeditorbr-dot" style="background:#5AC05A;"&gt;&lt;/span&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="codeeditorbr-column codeeditorbr-middle"&gt; <br/>
+        &lt;input type="text" disabled class="codeeditorbr-input" value="www.w3schools.com/tryit/"&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="w3-bar" style="background-color:#f1f1f1"&gt; &lt;button class="w3-bar-item w3-button codeeditorbr-tablink ws-grey" style="color:black" onclick="openLangTab(event,'Frontend')"&gt;Frontend&lt;/button&gt; &lt;button class="w3-bar-item w3-button codeeditorbr-tablink" style="color:black" onclick="openLangTab(event,'Backend')"&gt;Backend&lt;/button&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div id="Frontend" class="proglang"&gt; <br/>
+       &lt;img src="codeeditor.gif" style="width:100%;height:auto;display:block;border-bottom-left-radius:4px;border-bottom-right-radius:4px;" loading="lazy" alt="Frontend Code Editor"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div id="Backend" class="proglang" style="display:none"&gt; <br/>
+       &lt;img src="/tryit/best2.gif" style="width:100%;height:auto;display:block;border-bottom-left-radius:4px;border-bottom-right-radius:4px;" loading="lazy" alt="Backend Code Editor"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt;<br/>
+     &lt;br&gt; &lt;!--<br/>
+    &lt;a href="/tryit/tryit.asp?filename=tryhtml_default" target="_blank" class="ws-btn" style="font-size:18px;text-align:left;width:325px;"&gt;Try it Yourself (HTML/CSS/JS)&lt;/a&gt;&lt;br&gt;&lt;br&gt;<br/>
+    &lt;a href="/tryit/trycompiler.asp?filename=demo_python" target="_blank" class="ws-btn ws-yellow hover-yellow" style="font-size:18px;text-align:left;width:325px;"&gt;Try it Yourself (Python/PHP/Java etc.)&lt;/a&gt;<br/>
+    --&gt; &lt;a href="/tryit/tryit.asp?filename=tryhtml_hello" target="_blank" class="ws-btn w3-mobile" style="font-size:18px;text-align:left;"&gt;Try Frontend Editor (HTML/CSS/JS)&lt;/a&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt; &lt;a href="/tryit/trycompiler.asp?filename=demo_python" target="_blank" class="ws-btn w3-mobile ws-yellow hover-yellow" style="font-size:18px;text-align:left;"&gt;Try Backend Editor (Python/PHP/Java..)&lt;/a&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="bgcodeimg2" class="w3-center" style="background-color:#F3ECEA;color:white;"&gt; <br/>
+    &lt;div style="background-color:#282A35;opacity:0.96;margin:auto;padding:85px 20px;"&gt; <br/>
+     &lt;h1 style="font-size:65px;font-weight:700;"&gt;W3Schools Spaces&lt;/h1&gt; <br/>
+     &lt;h3 style="margin-top:35px;"&gt;Build your own website with W3Schools Spaces.&lt;/h3&gt;<br/>
+     &lt;br&gt; &lt;a href="/spaces/index.html" class="ws-btn tut-button" style="margin-top:15px;margin-bottom:18px;font-size:22px;width:300px;padding: 11px 18px;"&gt;Get Started for Free&lt;/a&gt;<br/>
+     &lt;br&gt; <br/>
+     &lt;img src="how-spaces-works3.png" class="w3-hide-medium w3-hide-small" style="max-width:100%;margin:auto;" loading="lazy"&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-center" style="background-color:#F3ECEA;color:#000;padding-top:78px;padding-bottom:95px"&gt; <br/>
+    &lt;div class="w3-content" style="max-width:1400px"&gt; <br/>
+     &lt;h1 style="font-size:65px;font-weight:700;"&gt;Color Picker&lt;/h1&gt; <br/>
+     &lt;h4 style="margin-top:25px;"&gt;W3Schools' famous color picker&lt;/h4&gt; &lt;a href="/colors/colors_picker.asp" class="w3-hover-opacity"&gt;&lt;img style="width:150px;height:128px;margin-top:16px;" src="/images/colorpicker.png" alt="Colorpicker" loading="lazy"&gt;&lt;/a&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-row ws-turquoise" style="padding-top:40px;padding-bottom:40px;"&gt; <br/>
+    &lt;div class="w3-col l12 w3-center" style="padding:3%;"&gt; <br/>
+     &lt;h1 style="font-family: 'Freckle Face', cursive;font-size:48px"&gt;Code Game&lt;/h1&gt; <br/>
+     &lt;h2 style="font-family: 'Freckle Face', cursive;"&gt;Help the Lynx collect pine cones!&lt;/h2&gt; &lt;a href="/codegame/index.html" target="_blank" class="w3-hover-opacity"&gt;&lt;img style="margin:16px 0;" src="/images/w3lynx_200.png" alt="Code Game" loading="lazy"&gt;&lt;/a&gt; <br/>
+     &lt;p&gt;&lt;a class="w3-button tut-button black-color" href="/codegame/index.html" target="_blank"&gt;Play Game&lt;/a&gt;&lt;/p&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="bgcodeimg" class="w3-center w3-padding-64" style="padding-bottom:80px!important;background-color:#232434;color:white"&gt; <br/>
+    &lt;h2 style="font-size:45px;font-weight:700"&gt;Exercises and Quizzes&lt;/h2&gt; <br/>
+    &lt;h4&gt;Test your skills!&lt;/h4&gt; <br/>
+    &lt;br&gt; <br/>
+    &lt;div class="w3-row-padding w3-content" style="max-width:1352px"&gt; <br/>
+     &lt;div class="w3-half"&gt; <br/>
+      &lt;p&gt;&lt;a class="w3-button exercise-button w3-round ws-green" href="/exercises/index.php"&gt;Exercises&lt;/a&gt;&lt;/p&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="w3-half"&gt; <br/>
+      &lt;p&gt;&lt;a class="w3-button exercise-button w3-round ws-yellow hover-yellow" href="/quiztest/default.asp"&gt;Quizzes&lt;/a&gt;&lt;/p&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-center ws-grey" style="padding:64px 24px 90px 24px"&gt; <br/>
+    &lt;h2 style="font-size:45px;font-weight:700"&gt;Web Templates&lt;/h2&gt; <br/>
+    &lt;h4&gt;Browse our selection of &lt;strong&gt;free&lt;/strong&gt; responsive HTML Templates&lt;/h4&gt; <br/>
+    &lt;div class="w3-content"&gt; &lt;a href="/w3css/w3css_templates.asp"&gt;&lt;img src="w3css_templates.jpg" loading="lazy" style="width:100%;margin:16px 0 20px 0" alt="W3.CSS Templates"&gt;&lt;/a&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;p&gt;&lt;a href="/w3css/w3css_templates.asp" class="w3-button tut-button black-color w3-padding-16 w3-mobile" style="width:50%"&gt;BROWSE TEMPLATES&lt;/a&gt;&lt;/p&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-panel" id="getdiploma" style="margin-top:0;padding-bottom:64px;"&gt; <br/>
+    &lt;h2&gt;Kickstart your career&lt;/h2&gt; <br/>
+    &lt;p&gt;Get certified by completing a course&lt;/p&gt; &lt;a class="w3-btn w3-margin-bottom" href="https://courses.w3schools.com/" target="_blank"&gt;Get started&lt;/a&gt; <br/>
+    &lt;svg id="w3_cert_arrow" viewbox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg"&gt; &lt;path d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867" stroke="white" stroke-width="2" stroke-linecap="round"&gt;&lt;/path&gt; &lt;path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;/path&gt; <br/>
+    &lt;/svg&gt; <br/>
+    &lt;svg id="w3_cert_badge" data-name="w3_cert_badge" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 300 300"&gt;<br/>
+     &lt;defs&gt;<br/>
+      &lt;style&gt;.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}&lt;/style&gt;<br/>
+     &lt;/defs&gt;&lt;circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"&gt;&lt;/circle&gt;&lt;text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)"&gt;<br/>
+      w<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="translate(107.13 56.35) rotate(-20.8)"&gt;<br/>
+      3<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)"&gt;<br/>
+      s<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="translate(136.89 47.84) rotate(-3.47)"&gt;<br/>
+      c<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="translate(152.39 47.03) rotate(5.12)"&gt;<br/>
+      h<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="translate(167.85 48.54) rotate(13.72)"&gt;<br/>
+      o<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)"&gt;<br/>
+      o<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)"&gt;<br/>
+      l<br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)"&gt;<br/>
+      s<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(35.51 186.66) rotate(69.37)"&gt; <br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)"&gt;<br/>
+      C<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)"&gt;<br/>
+      E<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)"&gt;<br/>
+      R<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)"&gt;<br/>
+      T<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)"&gt;<br/>
+      I<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(94.94 256.83) rotate(24.36)"&gt;<br/>
+      F<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(109.34 263.09) rotate(16.83)"&gt;<br/>
+      I<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)"&gt;<br/>
+      E<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)"&gt;<br/>
+      D<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"&gt; <br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(171.32 268.24) rotate(-13.06)"&gt; <br/>
+     &lt;/text&gt;&lt;text class="cls-2" transform="translate(187.55 266.81) rotate(-21.04)"&gt;<br/>
+      .<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(203.27 257.7) rotate(-29.24)"&gt; <br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"&gt; <br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)"&gt;<br/>
+      2<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(240.39 229.13) rotate(-51.62)"&gt;<br/>
+      0<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="translate(249.97 216.63) rotate(-59.17)"&gt;<br/>
+      2<br/>
+     &lt;/text&gt;&lt;text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)"&gt;<br/>
+      2<br/>
+     &lt;/text&gt;&lt;path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"&gt;&lt;/path&gt;&lt;path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"&gt;&lt;/path&gt;<br/>
+    &lt;/svg&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="w3-white w3-center w3-content" id="howto_padding"&gt; <br/>
+    &lt;h2 style="font-size:45px;font-weight:700"&gt;How To Section&lt;/h2&gt; <br/>
+    &lt;h4 class="xxw3-text-dark-grey"&gt;Code snippets for HTML, CSS and JavaScript&lt;/h4&gt; <br/>
+    &lt;h6 style="margin-top:19px;"&gt;For example, how to create a slideshow:&lt;/h6&gt; <br/>
+    &lt;br&gt; <br/>
+    &lt;div class="codeeditorbr-container" style="text-align:left;"&gt; <br/>
+     &lt;div class="codeeditorbr-row"&gt; <br/>
+      &lt;div class="codeeditorbr-column codeeditorbr-left"&gt; &lt;span class="codeeditorbr-dot" style="background:#ED594A;"&gt;&lt;/span&gt; &lt;span class="codeeditorbr-dot" style="background:#FDD800;"&gt;&lt;/span&gt; &lt;span class="codeeditorbr-dot" style="background:#5AC05A;"&gt;&lt;/span&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="codeeditorbr-column codeeditorbr-middle"&gt; <br/>
+       &lt;input type="text" disabled class="codeeditorbr-input" value="www.w3schools.com/howto/"&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; &lt;iframe src="/howto/tryhow_js_slideshow_ifr.htm" id="howto_iframe"&gt;&lt;/iframe&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div style="position:relative"&gt; <br/>
+     &lt;div class="vl-howto"&gt;&lt;/div&gt; <br/>
+    &lt;/div&gt; &lt;a href="/howto/default.asp" class="w3-button tut-button ws-black w3-padding-16 w3-mobile vl-howtobtn"&gt;LEARN HOW TO&lt;/a&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;footer class="w3-container w3-center w3-padding-32 ws-black"&gt; <br/>
+    &lt;div class="w3-container w3-padding-32"&gt; &lt;a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="https://courses.w3schools.com/" target="_blank" style="font-size:17px;margin-top:-9px" title="Courses"&gt;COURSES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/quiztest/default.asp" style="font-size:17px;margin-top:-9px;margin-left:12px" title="Quizzes"&gt;QUIZZES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/exercises/index.php" style="font-size:17px;margin-top:-9px;margin-left:12px" title="Exercises"&gt;EXERCISES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/pro/index.php" style="font-size:17px;margin-top:-9px;margin-left:12px" title="Pro Subscriptions"&gt;PRO&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/spaces/index.html" target="_blank" style="font-size:17px;margin-top:-9px;margin-left:12px" onclick="ga('send', 'event', 'spacesFromBottomNavDefault', 'click');" title="Get Your Own Website With W3schools Spaces"&gt;SPACES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-large w3-round" href="https://courses.w3schools.com/" target="_blank" style="font-size:16px;margin-bottom:16px" title="Courses"&gt;COURSES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-large w3-round" href="/quiztest/default.asp" style="font-size:16px;margin-bottom:16px;" title="Quizzes"&gt;QUIZZES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-large w3-round" href="/exercises/index.php" style="font-size:16px;margin-bottom:16px;" title="Exercises"&gt;EXERCISES&lt;/a&gt; &lt;a class="w3-button w3-white w3-hide-large w3-round" href="/pro/index.php" style="font-size:16px;margin-bottom:16px;" title="Pro Subscriptions"&gt;PRO&lt;/a&gt; <br/>
+     &lt;nav class="w3-right w3-hide-medium w3-hide-small w3-wide"&gt; &lt;a href="/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none" title="Forum"&gt;FORUM&lt;/a&gt; | &lt;a href="/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none" title="About W3Schools"&gt;ABOUT&lt;/a&gt; <br/>
+     &lt;/nav&gt; <br/>
+     &lt;p class="w3-hide-large"&gt;&lt;a class="w3-button w3-white w3-round" target="_blank" href="/spaces/index.html" style="margin:auto;display:block;max-width:300px;font-size:16px;margin-bottom:16px;" onclick="ga('send', 'event', 'spacesFromBottomNavDefault', 'click');" title="Get Your Own Website With W3schools Spaces"&gt;SPACES&lt;/a&gt;&lt;/p&gt; <br/>
+     &lt;nav class="w3-center w3-hide-large w3-margin-top w3-wide"&gt; &lt;a href="/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none" title="Forum"&gt;FORUM&lt;/a&gt; | &lt;a href="/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none" title="About W3Schools"&gt;ABOUT&lt;/a&gt; <br/>
+     &lt;/nav&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="w3-container"&gt; &lt;a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://discord.gg/6Z7UaRbUQM" title="Join the W3schools community on Discord"&gt;&lt;i class="fa"&gt;î&nbsp;‡&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.linkedin.com/company/w3schools.com/" title="W3Schools on LinkedIn"&gt;&lt;i class="fa"&gt;ïŒŒ&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.instagram.com/w3schools.com_official/" title="W3Schools on Instagram"&gt;&lt;i class="fa"&gt;ï…­&lt;/i&gt;&lt;/a&gt; &lt;a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.facebook.com/w3schoolscom/" title="W3Schools on Facebook"&gt;&lt;i class="fa"&gt;î&nbsp;†&lt;/i&gt;&lt;/a&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;p class="w3-medium"&gt; W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our &lt;a href="/about/about_copyright.asp" class="w3-hover-text-green"&gt;terms of use&lt;/a&gt;, &lt;a href="/about/about_privacy.asp" class="w3-hover-text-green"&gt;cookie and privacy policy&lt;/a&gt;.&lt;br&gt; &lt;a href="/about/about_copyright.asp" class="w3-hover-text-green"&gt;Copyright 1999-2022&lt;/a&gt; by Refsnes Data. All Rights Reserved.&lt;br&gt;&lt;br&gt;&lt;/p&gt; &lt;a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook"&gt; &lt;i class="fa fa-thumbs-o-up w3-xxlarge w3-hover-opacity"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+    &lt;div id="fblikeframe" class="w3-modal"&gt; <br/>
+     &lt;div class="w3-modal-content w3-padding-64 w3-round" id="popupDIV"&gt;&lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/footer&gt; &lt;!-- END MAIN --&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;script src="/lib/uic.js?v=1.0.3"&gt;&lt;/script&gt; <br/>
+  &lt;script&gt;<br/>
+function openLangTab(evtEd, codeName) {<br/>
+  var indexEditor, proglanguage, progtablinks;<br/>
+  proglanguage = document.getElementsByClassName("proglang");<br/>
+  for (indexEditor = 0; indexEditor &lt; proglanguage.length; indexEditor++) {<br/>
+    proglanguage[indexEditor].style.display = "none";<br/>
+  }<br/>
+  progtablinks = document.getElementsByClassName("codeeditorbr-tablink");<br/>
+  for (indexEditor = 0; indexEditor &lt; proglanguage.length; indexEditor++) {<br/>
+    progtablinks[indexEditor].className = progtablinks[indexEditor].className.replace(" ws-grey", "");<br/>
+  }<br/>
+  document.getElementById(codeName).style.display = "block";<br/>
+  evtEd.currentTarget.className += " ws-grey";<br/>
+}<br/>
+<br/>
+function w3_open() {<br/>
+  var x = document.getElementById("myAccordion");<br/>
+  if (x.style.display === 'none') {<br/>
+    x.style.display = 'block';<br/>
+    if (document.getElementById("navbtn_menu")) {<br/>
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "none";<br/>
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "inline";<br/>
+    }<br/>
+  } else {<br/>
+    x.style.display = 'none';<br/>
+    if (document.getElementById("navbtn_menu")) {<br/>
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "inline";<br/>
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "none";<br/>
+    }<br/>
+  }<br/>
+}<br/>
+function w3_close() {<br/>
+  document.getElementById("myAccordion").style.display = "none";<br/>
+}<br/>
+function open_xs_menu(x) {<br/>
+  if (document.getElementById("sectionxs_" + x).innerHTML == "") {<br/>
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;<br/>
+  } else {<br/>
+    document.getElementById("sectionxs_" + x).innerHTML = "";<br/>
+  }<br/>
+}<br/>
+function w3_open_nav(x) {<br/>
+  if (document.getElementById("nav_" + x).style.display == "block") {<br/>
+    w3_close_nav(x);<br/>
+  } else {<br/>
+    w3_close_nav("tutorials");<br/>
+    w3_close_nav("references");<br/>
+    w3_close_nav("exercises");<br/>
+    document.getElementById("nav_" + x).style.display = "block";<br/>
+    if (document.getElementById("navbtn_" + x)) {<br/>
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";<br/>
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";<br/>
+      document.getElementById("navbtn_" + x).classList.add("mystyle");<br/>
+    } <br/>
+    if (x == "search") {<br/>
+      if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }<br/>
+    }<br/>
+  }<br/>
+}<br/>
+function w3_close_all_nav() {<br/>
+  w3_close_nav("tutorials");<br/>
+  w3_close_nav("references");<br/>
+  w3_close_nav("exercises");<br/>
+  w3_close();<br/>
+}<br/>
+function w3_close_nav(x) {<br/>
+  document.getElementById("nav_" + x).style.display = "none";<br/>
+  if (document.getElementById("navbtn_" + x)) {<br/>
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "inline";<br/>
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";<br/>
+    document.getElementById("navbtn_" + x).classList.remove("mystyle");<br/>
+  }<br/>
+}<br/>
+function mouseoverdarkicon() {<br/>
+  var a = document.getElementById("darkmodemenu");<br/>
+  a.style.top = "75px";<br/>
+}<br/>
+function mouseoutofdarkicon() {<br/>
+  var a = document.getElementById("darkmodemenu");<br/>
+  a.style.top = "5px";<br/>
+}<br/>
+function changepagetheme(n) {<br/>
+  var a = document.getElementById("radio_darkcode");<br/>
+  var b = document.getElementById("radio_darkpage");<br/>
+  document.body.className = document.body.className.replace("darktheme", "");<br/>
+  document.body.className = document.body.className.replace("darkpagetheme", "");    <br/>
+  document.body.className = document.body.className.replace("  ", " ");<br/>
+  if (a.checked && b.checked) {<br/>
+    localStorage.setItem("preferredmode", "light");<br/>
+    localStorage.setItem("preferredpagemode", "light");<br/>
+    a.checked = false;<br/>
+    b.checked = false;    <br/>
+    document.getElementById("wavepath").style.fill = "#282A35";    <br/>
+  } else {<br/>
+    document.body.className += " darktheme";<br/>
+    document.body.className += " darkpagetheme";  <br/>
+    localStorage.setItem("preferredmode", "dark");<br/>
+    localStorage.setItem("preferredpagemode", "dark");<br/>
+    a.checked = true;<br/>
+    b.checked = true;    <br/>
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)"; <br/>
+  }<br/>
+}<br/>
+<br/>
+<br/>
+function click_darkpage() {<br/>
+  var b = document.getElementById("radio_darkpage");<br/>
+  if (b.checked) {<br/>
+    document.body.className += " darkpagetheme";<br/>
+    document.body.className = document.body.className.replace("  ", " ");    <br/>
+    localStorage.setItem("preferredpagemode", "dark");<br/>
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)";<br/>
+    <br/>
+  } else {<br/>
+    document.body.className = document.body.className.replace("darkpagetheme", "");<br/>
+    document.body.className = document.body.className.replace("  ", " ");    <br/>
+    localStorage.setItem("preferredpagemode", "light");<br/>
+    document.getElementById("wavepath").style.fill = "#282A35";    <br/>
+  }<br/>
+}<br/>
+<br/>
+function click_darkcode() {<br/>
+  var a = document.getElementById("radio_darkcode");<br/>
+  if (a.checked) {<br/>
+    document.body.className += " darktheme";<br/>
+    document.body.className = document.body.className.replace("  ", " ");    <br/>
+    localStorage.setItem("preferredmode", "dark");<br/>
+  } else {<br/>
+    document.body.className = document.body.className.replace("darktheme", "");<br/>
+    document.body.className = document.body.className.replace("  ", " ");<br/>
+    localStorage.setItem("preferredmode", "light");<br/>
+  }<br/>
+}<br/>
+<br/>
+function changecodetheme() {<br/>
+  var cc = document.body.className;<br/>
+  if (cc.indexOf("darktheme") &gt; -1) {<br/>
+    document.body.className = cc.replace("darktheme", "");<br/>
+    localStorage.setItem("preferredmode", "light");<br/>
+  } else {<br/>
+    document.body.className += " darktheme";<br/>
+    localStorage.setItem("preferredmode", "dark");<br/>
+  }<br/>
+}<br/>
+function open_translate(elmnt) {<br/>
+  var a = document.getElementById("google_translate_element");<br/>
+  if (a.style.display == "") {<br/>
+    a.style.display = "none";<br/>
+    elmnt.innerHTML = "&lt;i class='fa'&gt;&#xe801;&lt;/i&gt;";<br/>
+  } else {<br/>
+    a.style.display = "";<br/>
+    if (window.innerWidth &gt; 830) {<br/>
+      a.style.width = "32%";<br/>
+    } else {<br/>
+      a.style.width = "60%";<br/>
+    }<br/>
+    elmnt.innerHTML = "&lt;span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'&gt;&times;&lt;/span&gt;";<br/>
+  }<br/>
+}<br/>
+function open_search(elmnt, sfb) {<br/>
+  var a = document.getElementById("googleSearch");<br/>
+  if (a.style.visibility == "hidden" && a.style.display == "") {<br/>
+    a.style.visibility = "";<br/>
+    a.style.display = "none";<br/>
+  }<br/>
+  if (sfb == false) {<br/>
+    if (a.style.display == "") {<br/>
+      a.style.visibility = "";<br/>
+      a.style.display = "none";<br/>
+      elmnt.innerHTML = "&lt;i class='fa'&gt;&#xe802;&lt;/i&gt;";    <br/>
+    } else {<br/>
+      a.style.display = "";<br/>
+      a.style.visibility == "hidden"<br/>
+      ga('send', 'event', 'search', 'googleTop');        <br/>
+      if (window.innerWidth &gt; 1000) {<br/>
+        a.style.width = "50%";<br/>
+      } else if (window.innerWidth &gt;768) {<br/>
+        a.style.width = "80%";    <br/>
+      } else {<br/>
+        a.style.width = "80%";<br/>
+      }<br/>
+      window.setTimeout(function () {<br/>
+          if (document.getElementById("gsc-i-id1")) {<br/>
+            document.getElementById("gsc-i-id1").focus();<br/>
+          }<br/>
+        }, 400);<br/>
+      //elmnt.innerHTML = "&lt;span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'&gt;&times;&lt;/span&gt;";<br/>
+    }<br/>
+  } else {<br/>
+    if (a.style.display == "") {<br/>
+      a.style.visibility = "";<br/>
+      a.style.display = "none";<br/>
+    } else {<br/>
+      a.style.display = "";<br/>
+      a.style.visibility == "hidden"<br/>
+      ga('send', 'event', 'search', 'googleInput');    <br/>
+    }<br/>
+    a.style.visibility = "hidden";<br/>
+    a.style.display = ""; <br/>
+  }<br/>
+}<br/>
+<br/>
+function googleTranslateElementInit() {<br/>
+  new google.translate.TranslateElement({<br/>
+  pageLanguage: 'en',<br/>
+  autoDisplay: false,    <br/>
+  gaTrack: true,<br/>
+  gaId: 'UA-3855518-1',<br/>
+  layout: google.translate.TranslateElement.InlineLayout.SIMPLE<br/>
+  }, 'google_translate_element');<br/>
+}<br/>
+function clickFBLike() {<br/>
+  document.getElementById("fblikeframe").style.display='block';<br/>
+  document.getElementById("popupDIV").innerHTML = "&lt;iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'&gt;&lt;/iframe&gt;&lt;br&gt;&lt;button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color'&gt;Close&lt;/button&gt;";<br/>
+}<br/>
+function hideFBLike() {<br/>
+  document.getElementById("fblikeframe").style.display='none';<br/>
+}<br/>
+&lt;/script&gt; <br/>
+  &lt;script src="/lib/w3codecolor.js"&gt;&lt;/script&gt; <br/>
+  &lt;script&gt;<br/>
+  MyLearning.loadUser('default');<br/>
+<br/>
+w3CodeColor();<br/>
+<br/>
+var pagesArr = [<br/>
+  ["html", "/html/default.asp", "HTML Tutorial"],<br/>
+  ["css", "/css/default.asp", "CSS Tutorial"],<br/>
+  ["js", "/js/default.asp", "JavaScript Tutorial"],<br/>
+  ["python", "/python/default.asp", "Python Tutorial"],<br/>
+  ["sql", "/sql/default.asp", "SQL Tutorial"],<br/>
+  ["php", "/php/default.asp", "PHP Tutorial"],<br/>
+  ["java", "/java/default.asp", "JAVA Tutorial"],<br/>
+  ["c", "/c/index.php", "C Tutorial"],<br/>
+  ["c++", "/cpp/default.asp", "C++ Tutorial"],<br/>
+  ["c#", "/cs/index.php", "C# Tutorial"],<br/>
+  ["jquery", "/jquery/default.asp", "jQuery Tutorial"],<br/>
+  ["w3css", "/w3css/default.asp", "W3.CSS Tutorial"],<br/>
+  ["bootstrap 3", "/bootstrap/default.asp", "Bootstrap3 Tutorial"],<br/>
+  ["bootstrap 4", "/bootstrap4/default.asp", "Bootstrap4 Tutorial"],<br/>
+  ["bootstrap 5", "/bootstrap5/index.php", "Bootstrap5 Tutorial"],<br/>
+  ["r", "/r/default.asp", "R Tutorial"],<br/>
+  ["kotlin", "/kotlin/index.php", "KOTLIN Tutorial"],<br/>
+  ["mysql", "/mysql/default.asp", "MySQL Tutorial"],<br/>
+  ["nodejs", "/nodejs/default.asp", "Node.js Tutorial"],<br/>
+  ["react", "/react/default.asp", "REACT Tutorial"],<br/>
+  ["json", "/js/js_json.asp", "JSON Tutorial"],<br/>
+  ["angularjs", "/angular/default.asp", "AngularJS Tutorial"],<br/>
+  ["w3.js", "/w3js/default.asp", "W3.JS Tutorial"],<br/>
+  ["xml", "/xml/default.asp", "XML Tutorial"],<br/>
+  ["sass", "/sass/default.php", "SASS Tutorial"],<br/>
+  ["icons", "/icons/default.asp", "Icons Tutorial"],<br/>
+  ["rwd", "/css/css_rwd_intro.asp", "Responsive Web Design Tutorial"],<br/>
+  ["graphics", "/graphics/default.asp", "Graphics Tutorial"],<br/>
+  ["graphics", "/graphics/svg_intro.asp", "SVG Tutorial"],<br/>
+  ["canvas", "/graphics/canvas_intro.asp", "Canvas Tutorial"],<br/>
+  ["raspberry pi", "/nodejs/nodejs_raspberrypi.asp", "RaspberryPi Tutorial"],<br/>
+  ["cybersecurity", "/cybersecurity/index.php", "Cyber Security Tutorial"],<br/>
+  ["colors", "/colors/default.asp", "Colors Tutorial"],<br/>
+  ["typescript", "/typescript/index.php", "TypeScript Tutorial"],<br/>
+  ["git", "/git/default.asp", "Git Tutorial"],<br/>
+  ["matplotlib", "/python/matplotlib_intro.asp", "Matplotlib Tutorial"],<br/>
+  ["numpy", "/python/numpy/default.asp", "NumPy Tutorial"],<br/>
+  ["pandas", "/python/pandas/default.asp", "Pandas Tutorial"],<br/>
+  ["scipy", "/python/scipy/index.php", "SciPy Tutorial"],<br/>
+  ["asp", "/asp/default.asp", "ASP Tutorial"],<br/>
+  ["accessibility", "/accessibility/index.php", "Accessibility Tutorial"],<br/>
+  ["appml", "/appml/default.asp", "AppML Tutorial"],<br/>
+  ["go", "/go/index.php", "GO Tutorial"],<br/>
+  ["excell", "/excel/index.php", "Excel Tutorial"],<br/>
+  ["google sheets", "/googlesheets/index.php", "Google Sheets Tutorial"],<br/>
+  ["ml", "/python/python_ml_getting_started.asp", "Machine Learning Tutorial"],<br/>
+  ["artificial intelligence", "/ai/default.asp", "AI Tutorial"],<br/>
+  ["statistics", "/statistics/index.php", "Statistics Tutorial"],<br/>
+  ["data science", "/datascience/default.asp", "Data Science Tutorial"],<br/>
+  ["code editor", "/tryit/tryit.asp?filename=tryhtml_hello", "Tryit Editor"],<br/>
+  ["color picker", "/colors/colors_picker.asp", "Color Picker"],<br/>
+  ["code game", "/codegame/index.html", "Code Game"],<br/>
+  ["exercises", "/exercises/index.php", "Exercises"],<br/>
+  ["quizzes", "/quiztest/default.asp", "Quizzes"],<br/>
+  ["templates", "/w3css/w3css_templates.asp", "W3.CSS Templates"],<br/>
+  ["courses", "https://courses.w3schools.com/", "Courses"],<br/>
+  ["certificates", "https://courses.w3schools.com/browse/certifications", "Certificates"],<br/>
+  ["spaces", "/spaces/index.html", "W3Schools Spaces"],<br/>
+  ["website", "/spaces/index.html", "Create website"],<br/>
+  ["how to", "/howto/default.asp", "How-To Library"],<br/>
+  ["aws cloud", "/aws/index.php", "AWS Cloud Tutorial"],<br/>
+  ["html reference", "/tags/default.asp", "HTML Tag Reference"],<br/>
+  ["", "/tags/ref_html_browsersupport.asp", "HTML Browser Support"],   <br/>
+  ["event reference", "/tags/ref_eventattributes.asp", "HTML Event Reference"],<br/>
+  ["color reference", "/colors/default.asp", "HTML Color Reference"],<br/>
+  ["attributes", "/tags/ref_attributes.asp", "HTML Attribute Reference"],<br/>
+  ["canvas reference", "/tags/ref_canvas.asp", "HTML Canvas Reference"],<br/>
+  ["svg reference", "/graphics/svg_reference.asp", "HTML SVG Reference"],<br/>
+  ["", "/graphics/google_maps_reference.asp", "Google Maps Reference"],<br/>
+  ["", "/cssref/default.asp", "CSS Reference"],<br/>
+  ["", "/cssref/css3_browsersupport.asp", "CSS Browser Support"],<br/>
+  ["", "/cssref/css_selectors.asp", "CSS Selector Reference"],<br/>
+  ["", "/bootstrap/bootstrap_ref_all_classes.asp", "Bootstrap 3 Reference"],<br/>
+  ["", "/bootstrap4/bootstrap_ref_all_classes.asp", "Bootstrap 4 Reference"],<br/>
+  ["", "/w3css/w3css_references.asp", "W3.CSS Reference"],<br/>
+  ["", "/icons/icons_reference.asp", "Icon Reference"],<br/>
+  ["", "/sass/sass_functions_string.php", "Sass Reference"],<br/>
+  ["", "/jsref/default.asp", "JavaScript Reference"],<br/>
+  ["", "/jsref/default.asp", "HTML DOM Reference"],<br/>
+  ["", "/jquery/jquery_ref_overview.asp", "jQuery Reference"],<br/>
+  ["", "/angular/angular_ref_directives.asp", "AngularJS Reference"],<br/>
+  ["", "/python/python_reference.asp", "Python Reference"],<br/>
+  ["", "/java/java_ref_keywords.asp", "Java Reference"],<br/>
+  ["", "/sql/sql_ref_keywords.asp", "SQL Reference"],<br/>
+  ["", "/mysql/mysql_ref_functions.asp", "MySQL Reference"],<br/>
+  ["", "/php/php_ref_overview.asp", "PHP Reference"],<br/>
+  ["", "/asp/asp_ref_response.asp", "ASP Reference"],<br/>
+  ["", "/xml/dom_nodetype.asp", "XML DOM Reference"],<br/>
+  ["", "/xml/dom_http.asp", "XML Http Reference"],<br/>
+  ["", "/xml/xsl_elementref.asp", "XSLT Reference"],<br/>
+  ["", "/xml/schema_elements_ref.asp", "XML Schema Reference"],<br/>
+  ["", "/charsets/default.asp", "HTML Character Sets"],<br/>
+  ["", "/charsets/ref_html_ascii.asp", "HTML ASCII"],<br/>
+  ["", "/charsets/ref_html_ansi.asp", "HTML ANSI"],<br/>
+  ["", "/charsets/ref_html_ansi.asp", "HTML Windows-1252"],<br/>
+  ["", "/charsets/ref_html_8859.asp", "HTML ISO-8859-1"],<br/>
+  ["", "/charsets/ref_html_symbols.asp", "HTML Symbols"],<br/>
+  ["", "/charsets/ref_html_utf8.asp", "HTML UTF-8"],<br/>
+  ["django", "/django/index.php", "Django Tutorial"],<br/>
+  ["", "/typingspeed/default.asp", "Test your typing speed"],  <br/>
+<br/>
+];<br/>
+<br/>
+function click_learntocode_search_btn() {<br/>
+  var x = document.getElementsByClassName("search_item");<br/>
+  if (x.length == 0) {<br/>
+    cc = 1;<br/>
+  }<br/>
+  for (i = 0; i &lt; x.length; i++) {<br/>
+    if (x[i].className.indexOf("search_active") &gt; -1) {<br/>
+      n = x[i].href;<br/>
+      if (n.indexOf("search_entire_w3schools") &gt; -1) {<br/>
+        cc = 1;<br/>
+      }<br/>
+      break;<br/>
+    }<br/>
+  }<br/>
+  if (cc == 1) {<br/>
+    searchFromBox = true;<br/>
+    submit_search_form();<br/>
+  } else {<br/>
+    ga('send', 'event', 'search', 'inputFoundBtn');<br/>
+    window.location = n;<br/>
+  }<br/>
+}<br/>
+function find_search_results(inp) {<br/>
+  var a, val, i, l, resultIndexes = [], html = "", classAtt = "", pos1, posNext, cc, c0, c1, c2;<br/>
+  a = document.getElementById("listofsearchresults");<br/>
+  a.innerHTML = "";<br/>
+  a.style.display = "none";<br/>
+  document.getElementById("search2").style.borderBottomLeftRadius = "25px";<br/>
+  val = inp.value.toUpperCase();<br/>
+  if (val == "") return false;<br/>
+  for (i = 0; i &lt; pagesArr.length; i++) {<br/>
+    if (pagesArr[i][0].toUpperCase().substr(0, val.length) == val || pagesArr[i][2].toUpperCase().substr(0, val.length) == val) {<br/>
+      resultIndexes.push(i);<br/>
+      if (resultIndexes.length &gt; 5) break;<br/>
+    }<br/>
+  }<br/>
+  for (i = 0; i &lt; pagesArr.length; i++) {<br/>
+    if (resultIndexes.indexOf(i) == -1 && (pagesArr[i][0].toUpperCase().indexOf(val) &gt; -1 || pagesArr[i][2].toUpperCase().indexOf(val) &gt; -1)) {<br/>
+      resultIndexes.push(i);<br/>
+      if (resultIndexes.length &gt; 5) break;<br/>
+    }<br/>
+  }<br/>
+  //if (resultIndexes.length == 0) return false;<br/>
+  document.getElementById("search2").style.borderBottomLeftRadius = "0";<br/>
+  a.style.display = "block";<br/>
+  for (i = 0; i &lt; resultIndexes.length; i++) {<br/>
+    cc = pagesArr[resultIndexes[i]][2];<br/>
+    pos1 = cc.toUpperCase().indexOf(val);<br/>
+    dd = "";<br/>
+    while (pos1 &gt; -1) {<br/>
+      c0 = cc.substr(0, pos1);<br/>
+      c1 = "&lt;span class='span_search'&gt;" + cc.substr(pos1, val.length) + "&lt;/span&gt;";<br/>
+      c2 = cc.substr(pos1 + val.length);<br/>
+      dd += c0 + c1;<br/>
+      posNext = c2.toUpperCase().indexOf(val);<br/>
+      if (posNext &gt; -1) {<br/>
+        cc = c2;<br/>
+        pos1 = posNext;<br/>
+      } else {<br/>
+        cc = dd + c2;<br/>
+        pos1 = -1;<br/>
+      }<br/>
+    }<br/>
+    classAtt = "";<br/>
+    linkEvent = 'ga("send", "event", "search", "inputFound")';<br/>
+    if (html == "") classAtt = " search_active";<br/>
+    html += "&lt;a class='search_item" + classAtt + "' onclick='" + linkEvent + "' href='" + pagesArr[resultIndexes[i]][1] + "'&gt;" + cc + "&lt;/a&gt;";<br/>
+  }<br/>
+  if (resultIndexes.length == 0) {<br/>
+    classAtt = "";<br/>
+    if (html == "") classAtt = " search_active";<br/>
+    html += "&lt;a class='search_item" + classAtt + "' onclick='click_search_w3schools_link(event)' href='search_entire_w3schools'&gt;Search W3Schools&lt;/a&gt;";<br/>
+  }<br/>
+  a.innerHTML = html;<br/>
+}<br/>
+function click_search_w3schools_link(event) {<br/>
+  event.preventDefault();<br/>
+  submit_search_form();<br/>
+}<br/>
+function key_pressed_in_search(event) {<br/>
+  var x, n, nn, i, cc = 0;<br/>
+  var keycode = event.keyCode;<br/>
+  //console.log(keycode);<br/>
+  if (keycode == 38 || keycode == 40) { //up || down<br/>
+    x = document.getElementsByClassName("search_item");<br/>
+    for (i = 0; i &lt; x.length; i++) {<br/>
+      if (x[i].className.indexOf("search_active") &gt; -1) {<br/>
+        x[i].className = "search_item";<br/>
+        n = i;<br/>
+        break;<br/>
+      }<br/>
+    }<br/>
+    if (keycode == 38) {<br/>
+      nn = n - 1;<br/>
+      if (nn &lt; 0) nn = 0;<br/>
+    }<br/>
+    if (keycode == 40) {<br/>
+      nn = n + 1;<br/>
+      if (nn &gt;= x.length) nn = nn - 1; <br/>
+    }<br/>
+    x[nn].className = "search_item search_active";<br/>
+  }<br/>
+  if (keycode == 13) {  //enter<br/>
+    event.preventDefault();<br/>
+    x = document.getElementsByClassName("search_item");<br/>
+    if (x.length == 0) {<br/>
+      cc = 1;<br/>
+    }<br/>
+    for (i = 0; i &lt; x.length; i++) {<br/>
+      if (x[i].className.indexOf("search_active") &gt; -1) {<br/>
+        n = x[i].href;<br/>
+        if (n.indexOf("search_entire_w3schools") &gt; -1) {<br/>
+          cc = 1;<br/>
+        }<br/>
+        break;<br/>
+      }<br/>
+    }<br/>
+    if (cc == 1) {<br/>
+      searchFromBox = true;<br/>
+      submit_search_form();<br/>
+    } else {<br/>
+      ga('send', 'event', 'search', 'inputFound');<br/>
+      window.location = n;<br/>
+    }<br/>
+  }<br/>
+}<br/>
+<br/>
+function submit_search_form() {<br/>
+    searchFromBox = true;<br/>
+    gSearch();<br/>
+    var delayInMilliseconds = 100; //0.1 second<br/>
+    setTimeout(execute_google_search, delayInMilliseconds);<br/>
+}<br/>
+<br/>
+function execute_google_search() {<br/>
+  if (typeof google == 'object') {<br/>
+    google.search.cse.element.getElement("standard0").execute(document.getElementById("search2").value);<br/>
+  } else {<br/>
+    setTimeout(execute_google_search, 100);<br/>
+  }  <br/>
+}<br/>
+<br/>
+document.body.addEventListener("click", function(event) {<br/>
+  var a, x = event.srcElement;<br/>
+  if (x.id == "search2" ||x.id == "learntocode_searchbtn" || x.id == "learntocode_searchicon" || x.classList.contains("search_item")) {<br/>
+  } else {<br/>
+    a = document.getElementById("listofsearchresults");<br/>
+    a.innerHTML = "";<br/>
+    a.style.display = "none";<br/>
+    document.getElementById("search2").style.borderBottomLeftRadius = "25px";<br/>
+    if (searchFromBox == true) {<br/>
+      document.getElementById("googleSearch").style.display = "none";<br/>
+      document.getElementById("googleSearch").style.visibility = "";  <br/>
+    }<br/>
+    searchFromBox = false;<br/>
+  }<br/>
+});<br/>
+&lt;/script&gt; &lt;iframe name="__tcfapiLocator" style="display: none;"&gt;&lt;/iframe&gt;&lt;iframe name="__uspapiLocator" style="display: none;"&gt;&lt;/iframe&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
